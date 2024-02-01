@@ -6,7 +6,7 @@ import "./index.css";
 
 const router = createBrowserRouter([
     {
-        path: "/",
+        path: import.meta.env.BASE_URL,
         Component: App,
     },
 ]);
