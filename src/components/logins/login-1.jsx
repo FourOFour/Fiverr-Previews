@@ -8,7 +8,7 @@ export default function Login1() {
 
     return (
         <div className="w-full min-h-screen flex items-center justify-center pt-20 pb-20 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 dark:from-gray-700 dark:via-gray-800 dark:to-gray-900 shadow-2xl dark:text-white">
-            <div className="w-full max-w-md bg-white dark:bg-gray-800 shadow-md rounded-lg px-8 pt-6 pb-8 mb-4">
+            <div className="w-full max-w-md bg-white dark:bg-gray-800 shadow-md sm:rounded-lg px-8 pt-6 pb-8 mb-4">
                 <div className="mb-4 flex items-center justify-center">
                     <img
                         src={import.meta.env.BASE_URL + "/vite.svg"}
@@ -49,7 +49,7 @@ export default function Login1() {
                             type="password"
                         />
                     </div>
-                    <div className="flex items-center justify-between">
+                    <div className="md:flex items-center justify-between">
                         <div className="flex items-center">
                             <button
                                 type="button"
@@ -107,7 +107,7 @@ export default function Login1() {
                             </label>
                         </div>
                         <a
-                            className="text-sm text-gray-700 underline dark:text-gray-200"
+                            className="text-sm text-gray-700 underline dark:text-gray-200 md:inline-block block md:mt-0 mt-4"
                             href="#"
                         >
                             Forgot Password?
