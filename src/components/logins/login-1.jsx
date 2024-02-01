@@ -11,7 +11,7 @@ export default function Login1() {
             <div className="w-full max-w-md bg-white dark:bg-gray-800 shadow-md rounded-lg px-8 pt-6 pb-8 mb-4">
                 <div className="mb-4 flex items-center justify-center">
                     <img
-                        src={import.meta.env.BASE_URL + "/logo-300x300.png"}
+                        src={import.meta.env.BASE_URL + "/vite.svg"}
                         alt="Logo"
                         className="mr-2"
                         width="32"
