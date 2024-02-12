@@ -1,7 +1,7 @@
-import "./App.css";
-import Pricing from "./components/pricing/pricing.jsx";
-import Sidebar from "./components/sidebar/sidebar.jsx";
-import SignInUp from "./components/sign-in-up/sign-in-up.jsx";
+import "App.css";
+import Pricing from "components/pricing/pricing";
+import Sidebar from "components/sidebar/sidebar";
+import SignInUp from "components/sign-in-up/sign-in-up";
 import { useState } from "react";
 
 function App() {
