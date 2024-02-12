@@ -1,6 +1,7 @@
 import "./App.css";
-import Sidebar from "./components/Sidebar/Sidebar";
-import SignInUp1 from "./components/sign-in-up/sign-in-up-1";
+import Pricing from "./components/pricing/pricing";
+import Sidebar from "./components/sidebar/sidebar";
+import SignInUp from "./components/sign-in-up/sign-in-up";
 import { useState } from "react";
 
 function App() {
@@ -16,7 +17,8 @@ function App() {
                 <Sidebar isDark={isDark} toggleIsDark={toggleIsDark} />
             </aside>
             <main className="relative md:ml-64">
-                <SignInUp1 />
+                <SignInUp />
+                <Pricing />
             </main>
         </div>
     );

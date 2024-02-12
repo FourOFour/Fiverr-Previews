@@ -1,6 +1,8 @@
 import { useState } from "react";
+import KarabonLogo from "../../assets/svg/logo/karabon.svg?react";
+import CheckIcon from "../../assets/svg/icons/check.svg?react";
 
-export default function SignInUp1() {
+function SignInUp() {
     const [checked, setChecked] = useState(false);
     function toggleChecked() {
         setChecked(!checked);
@@ -11,10 +13,8 @@ export default function SignInUp1() {
             <div className="w-full min-h-screen flex flex-col items-center justify-center pt-20 pb-20 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 dark:from-gray-700 dark:via-gray-800 dark:to-gray-900 shadow-2xl dark:text-white ">
                 <div className="w-full max-w-md bg-white dark:bg-gray-800 shadow-md sm:rounded-lg px-8 pt-6 pb-8 mb-4">
                     <div className="mb-4 flex items-center justify-center">
-                        <img
-                            src={import.meta.env.BASE_URL + "/karabon.svg"}
-                            alt="Logo"
-                            className="mr-2 dark:hidden block"
+                        <KarabonLogo
+                            className="mr-2 block"
                             width="64"
                             height="32"
                             style={{
@@ -22,17 +22,7 @@ export default function SignInUp1() {
                                 objectFit: "cover",
                             }}
                         />
-                        <img
-                            src={import.meta.env.BASE_URL + "/karabon_light.svg"}
-                            alt="Logo"
-                            className="mr-2 dark:block hidden"
-                            width="64"
-                            height="32"
-                            style={{
-                                aspectRatio: "64 / 32",
-                                objectFit: "cover",
-                            }}
-                        />
+
                         <h1 className="text-2xl font-bold text-center">
                             Login
                         </h1>
@@ -88,20 +78,9 @@ export default function SignInUp1() {
                                             pointerEvents: "none",
                                         }}
                                     >
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            strokeWidth="2"
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
+                                        <CheckIcon
                                             className="h-4 w-4"
-                                        >
-                                            <polyline points="20 6 9 17 4 12"></polyline>
-                                        </svg>
+                                            />
                                     </span>
                                 </button>
                                 <input
@@ -176,21 +155,8 @@ export default function SignInUp1() {
                 </div>
                 <div className="w-full max-w-md bg-white dark:bg-gray-800 shadow-md sm:rounded-lg px-8 pt-6 pb-8 mb-4 mt-8">
                     <div className="mb-4 flex items-center justify-center">
-                        <img
-                            src={import.meta.env.BASE_URL + "/karabon.svg"}
-                            alt="Logo"
-                            className="mr-2 dark:hidden block"
-                            width="64"
-                            height="32"
-                            style={{
-                                aspectRatio: "64 / 32",
-                                objectFit: "cover",
-                            }}
-                        />
-                        <img
-                            src={import.meta.env.BASE_URL + "/karabon_light.svg"}
-                            alt="Logo"
-                            className="mr-2 dark:block hidden"
+                        <KarabonLogo
+                            className="mr-2 block"
                             width="64"
                             height="32"
                             style={{
@@ -303,3 +269,5 @@ export default function SignInUp1() {
         </>
     );
 }
+
+export default SignInUp;
