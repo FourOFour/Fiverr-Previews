@@ -1,6 +1,6 @@
 import "./App.css";
 import Pricing from "./components/pricing/pricing";
-import Sidebar from "./components/sidebar-1/sidebar-1";
+import Sidebar from "./components/sidebar/sidebar";
 import SignInUp from "./components/sign-in-up/sign-in-up";
 import { useState } from "react";
 
