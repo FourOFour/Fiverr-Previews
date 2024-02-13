@@ -1,7 +1,7 @@
 import "./App.css";
-import Pricing from "./components/pricing/pricing";
-import Sidebar from "./components/sidebar/sidebar";
-import SignInUp from "./components/sign-in-up/sign-in-up";
+import Pricing from "./components/Pricing/Pricing";
+import Sidebar from "./components/Sidebar/Sidebar";
+import SignInUp from "./components/Sign-in-up/Sign-in-up";
 import { useState } from "react";
 
 function App() {
