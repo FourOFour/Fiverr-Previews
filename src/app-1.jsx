@@ -1,4 +1,5 @@
 import "./app-1.css";
+import Hero from "./components/hero/hero";
 import Pricing from "./components/pricing-1/pricing-1";
 import Sidebar from "./components/sidebar-1/sidebar-1";
 import SignInUp from "./components/sign-in-up-1/sign-in-up-1";
@@ -19,6 +20,7 @@ function App() {
             <main className="relative md:ml-48">
                 <SignInUp />
                 <Pricing />
+                <Hero />
             </main>
         </div>
     );
