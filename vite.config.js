@@ -5,5 +5,5 @@ import svgr from 'vite-plugin-svgr'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [svgr(), react()],
-  base: '/Fiverr-Previews/'
+  base: '/fourofour-workflow-previews/'
 })
