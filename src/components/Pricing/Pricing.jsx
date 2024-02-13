@@ -9,12 +9,12 @@ function Pricing() {
                 key="1"
                 className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 dark:from-gray-700 dark:via-gray-800 dark:to-gray-900"
             >
-                <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
-                    <div className="space-y-3">
-                        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white">
+                <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10 dark:text-white mx-auto">
+                    <div className="space-y-3 bg-white dark:bg-gray-800 shadow-md sm:rounded-lg px-8 pt-6 pb-8 mb-4">
+                        <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl">
                             Choose the perfect plan for your team
                         </h2>
-                        <p className="mx-auto max-w-[700px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-white">
+                        <p className="mx-auto md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                             All plans include unlimited projects and team
                             members. 14-day trial on all plans.
                         </p>
