@@ -11,7 +11,7 @@ function SignInUp() {
     return (
         <>
             <div className="w-full min-h-screen flex flex-col items-center justify-center pt-20 pb-20 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 dark:from-gray-700 dark:via-gray-800 dark:to-gray-900 shadow-2xl dark:text-white ">
-                <div className="w-full max-w-md bg-white dark:bg-gray-800 shadow-md sm:rounded-lg px-8 pt-6 pb-8 mb-4">
+                <div className="w-full max-w-md bg-white dark:bg-gray-800 shadow-md sm:rounded-lg px-8 pt-6 pb-8 mb-4 border-solid border-[1px] border-gray-200 dark:border-gray-700">
                     <div className="mb-4 flex items-center justify-center">
                         <KarabonLogo
                             className="mr-2 block"
@@ -153,7 +153,7 @@ function SignInUp() {
                         </div>
                     </form>
                 </div>
-                <div className="w-full max-w-md bg-white dark:bg-gray-800 shadow-md sm:rounded-lg px-8 pt-6 pb-8 mb-4 mt-8">
+                <div className="w-full max-w-md bg-white dark:bg-gray-800 shadow-md sm:rounded-lg px-8 pt-6 pb-8 mb-4 mt-8 border-solid border-[1px] border-gray-200 dark:border-gray-700">
                     <div className="mb-4 flex items-center justify-center">
                         <KarabonLogo
                             className="mr-2 block"
