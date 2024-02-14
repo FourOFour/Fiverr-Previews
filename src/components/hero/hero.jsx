@@ -1,93 +1,71 @@
+import TwitterIcon from "../../assets/svg/icons/twitter.svg?react";
+import InstagramIcon from "../../assets/svg/icons/instagram.svg?react";
+import FacebookIcon from "../../assets/svg/icons/facebook.svg?react";
+
 function Hero() {
     return (
         <>
-            <section className="relative w-full min-h-[400px] grid items:center">
+            <section className="relative w-full min-h-[400px] grid items:center dark:text-white text-black">
                 <img
                     alt="Hero"
-                    className="absolute inset-0 object-cover w-full h-full bg-cover z-[1]"
-                    src={import.meta.env.BASE_URL + "placeholder.svg"}
+                    className="absolute inset-0 object-cover w-full h-full bg-cover z-[1] dark:block hidden"
+                    src={import.meta.env.BASE_URL + "images/hero1.jpg"}
+                />
+                <img
+                    alt="Hero"
+                    className="absolute inset-0 object-cover w-full h-full bg-cover z-[1] dark:hidden"
+                    src={import.meta.env.BASE_URL + "images/hero1_light.jpg"}
                 />
                 <div className="container px-4 text-center md:px-6 lg:text-left relative z-10 h-screen md:max-w-[50%]">
-                    <p className="text-xs font-medium tracking-wider uppercase text-black dark:text-black mt-[5vh]">
-                        Always up to date
-                    </p>
-                    <h1 className="text-3xl font-bold tracking-tighter lg:text-4xl/none mt-[15vh]">
-                        The future of frontend development
-                    </h1>
-                    <p className="text-sm text-black dark:text-black mt-[5vh]">
-                        Sign up to get updates on the latest news and features.
-                        No spam.
-                        Sign up to get updates on the latest news and features.
-                        No spam.
-                    </p>
-                    <input type="text" />
-                    <div className="flex flex-col gap-2 min-[400px]:flex-row w-auto">
+                    <div className="mb-[5vh]">
+                        <p className="text-xs font-medium tracking-wider uppercase mt-[5vh] mb-[13vh]">
+                            Always up to date
+                        </p>
+                        <h1 className="text-3xl font-bold tracking-tighter lg:text-4xl/none mb-[4vh]">
+                            The future of frontend development
+                        </h1>
+                        <p className="text-sm">
+                            Sign up to get updates on the latest news and
+                            features. No spam. Sign up to get updates on the
+                            latest news and features. No spam.
+                        </p>
+                    </div>
+                    <div className="mb-[1vh]">
+                        <input
+                            type="text"
+                            className="h-10 border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full block rounded-full"
+                            placeholder="Your first and last name"
+                        />
+                    </div>
+                    <div className="flex flex-row gap-1 w-full mb-[4vh]">
                         <input
                             type="email"
-                            className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 max-w-xs rounded-l-full sm:w-auto"
+                            className="h-10 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 rounded-l-full sm:w-auto flex-auto"
                             placeholder="Enter your email"
                         />
-                        <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors rounded-r-full md:translate-x-2 ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 w-full py-2 px-4 text-center bg-blue-800 hover:bg-blue-700 rounded-md text-white text-sm focus:outline-none">
-                            Subscribe
+                        <button className="inline-flex items-center justify-center flex-none w-32 whitespace-nowrap rounded-md font-medium transition-colors rounded-r-full md:translate-x-2 ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 w-full py-2 px-4 text-center bg-blue-800 hover:bg-blue-700 rounded-md text-white text-sm focus:outline-none uppercase">
+                            Yes, I&apos;m in
                         </button>
                     </div>
-                    <button className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground rounded-full m-1 bg-blue-600 hover:bg-blue-500 text-white w-8 h-8 p-2">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                        >
-                            <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
-                        </svg>
-                        <span className="sr-only">Twitter</span>
-                    </button>
-                    <button className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground rounded-full m-1 bg-blue-600 hover:bg-blue-500 text-white w-8 h-8 p-2">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                        >
-                            <rect
-                                width="20"
-                                height="20"
-                                x="2"
-                                y="2"
-                                rx="5"
-                                ry="5"
-                            ></rect>
-                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
-                        </svg>
-                        <span className="sr-only">Instagram</span>
-                    </button>
-                    <button className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground rounded-full m-1 bg-blue-600 hover:bg-blue-500 text-white w-8 h-8 p-2">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                        >
-                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                        </svg>
-                        <span className="sr-only">Facebook</span>
-                    </button>
+                    <div className="">
+                        <button className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground rounded-full m-1 bg-blue-600 hover:bg-blue-500 text-white w-8 h-8 p-2 border-blue-800 dark:border-blue-300">
+                            <TwitterIcon />
+                            <span className="sr-only">Twitter</span>
+                        </button>
+                        <button className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground rounded-full m-1 bg-blue-600 hover:bg-blue-500 text-white w-8 h-8 p-2 border-blue-800 dark:border-blue-300">
+                            <InstagramIcon />
+                            <span className="sr-only">Instagram</span>
+                        </button>
+                        <button className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground rounded-full m-1 bg-blue-600 hover:bg-blue-500 text-white w-8 h-8 p-2 border-blue-800 dark:border-blue-300">
+                            <FacebookIcon />
+                            <span className="sr-only">Facebook</span>
+                        </button>
+                    </div>
+                    <div className="md:absolute bottom-[2vh] left-[5vh]">
+                        <p className="text-xs font-medium tracking-wider uppercase">
+                            &copy;2024 KarabonTM, All Rights Reserved.
+                        </p>
+                    </div>
                 </div>
             </section>
         </>
