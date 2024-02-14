@@ -40,10 +40,10 @@ function Hero() {
                     <div className="flex flex-row gap-1 w-full mb-[4vh]">
                         <input
                             type="email"
-                            className="h-10 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 rounded-l-full sm:w-auto flex-auto"
+                            className="h-10 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 rounded-l-full flex-auto"
                             placeholder="Enter your email"
                         />
-                        <button className="inline-flex items-center justify-center flex-none w-32 whitespace-nowrap rounded-md font-medium transition-colors rounded-r-full md:translate-x-2 ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 w-full py-2 px-4 text-center bg-blue-800 hover:bg-blue-700 rounded-md text-white text-sm focus:outline-none uppercase">
+                        <button className="inline-flex items-center justify-center flex-none w-32 whitespace-nowrap rounded-md font-medium transition-colors rounded-r-full md:translate-x-2 ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 py-2 px-4 text-center bg-blue-800 hover:bg-blue-700 rounded-md text-white text-sm focus:outline-none uppercase">
                             Yes, I&apos;m in
                         </button>
                     </div>
