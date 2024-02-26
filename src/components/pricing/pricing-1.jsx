@@ -2,7 +2,7 @@ import PlusIcon from "../../assets/svg/icons/plus.svg?react";
 import PriceTagIcon from "../../assets/svg/icons/price-tag.svg?react";
 import CircleIcon from "../../assets/svg/icons/circle.svg?react";
 
-function Pricing() {
+function Pricing1() {
     return (
         <>
             <section
@@ -399,4 +399,4 @@ function Pricing() {
     );
 }
 
-export default Pricing;
+export default Pricing1;

@@ -2,7 +2,7 @@ import { useState } from "react";
 import KarabonLogo from "../../assets/svg/logo/karabon.svg?react";
 import CheckIcon from "../../assets/svg/icons/check.svg?react";
 
-function SignInUp() {
+function SignInUp1() {
     const [checked, setChecked] = useState(false);
     function toggleChecked() {
         setChecked(!checked);
@@ -10,13 +10,13 @@ function SignInUp() {
 
     return (
         <>
-            <div className="w-full min-h-screen flex flex-col items-center justify-center pt-20 pb-20 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 dark:from-gray-700 dark:via-gray-800 dark:to-gray-900 shadow-2xl dark:text-white ">
+            <div className="w-full min-h-screen flex flex-col items-center justify-center pt-20 pb-20 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 dark:from-gray-700 dark:via-gray-800 dark:to-gray-900 shadow-2xl dark:text-white text-black">
                 <div className="w-full max-w-md bg-white dark:bg-gray-800 shadow-md sm:rounded-lg px-8 pt-6 pb-8 mb-4 border-solid border-[1px] border-gray-200 dark:border-gray-700">
                     <div className="mb-4 flex items-center justify-center">
                         <KarabonLogo
                             className="mr-2 block"
-                            width="64"
-                            height="32"
+                            width={64}
+                            height={32}
                             style={{
                                 aspectRatio: "64 / 32",
                                 objectFit: "cover",
@@ -41,6 +41,7 @@ function SignInUp() {
                                 placeholder="Username"
                                 type="text"
                             />
+                            <p className="text-xs font-medium leading-none text-red-500 mt-1">Error message goes here</p>
                         </div>
                         <div className="mb-4">
                             <label
@@ -55,6 +56,7 @@ function SignInUp() {
                                 placeholder="*********"
                                 type="password"
                             />
+                            <p className="text-xs font-medium leading-none text-red-500 mt-1">Error message goes here</p>
                         </div>
                         <div className="sm:flex items-center justify-between">
                             <div className="flex items-center">
@@ -126,6 +128,7 @@ function SignInUp() {
                                 placeholder="Enter Captcha"
                                 type="text"
                             />
+                            <p className="text-xs font-medium leading-none text-red-500 mt-1">Error message goes here</p>
                         </div>
                         <div className="mt-6">
                             <button
@@ -157,8 +160,8 @@ function SignInUp() {
                     <div className="mb-4 flex items-center justify-center">
                         <KarabonLogo
                             className="mr-2 block"
-                            width="64"
-                            height="32"
+                            width={64}
+                            height={32}
                             style={{
                                 aspectRatio: "64 / 32",
                                 objectFit: "cover",
@@ -182,6 +185,7 @@ function SignInUp() {
                                 placeholder="Username"
                                 type="text"
                             />
+                            <p className="text-xs font-medium leading-none text-red-500 mt-1">Error message goes here</p>
                         </div>
                         <div className="mb-4">
                             <label
@@ -196,6 +200,7 @@ function SignInUp() {
                                 placeholder="Email"
                                 type="email"
                             />
+                            <p className="text-xs font-medium leading-none text-red-500 mt-1">Error message goes here</p>
                         </div>
                         <div className="mb-4">
                             <label
@@ -210,6 +215,7 @@ function SignInUp() {
                                 placeholder="*********"
                                 type="password"
                             />
+                            <p className="text-xs font-medium leading-none text-red-500 mt-1">Error message goes here</p>
                         </div>
                         <div className="mb-4">
                             <label
@@ -224,6 +230,7 @@ function SignInUp() {
                                 placeholder="*********"
                                 type="password"
                             />
+                            <p className="text-xs font-medium leading-none text-red-500 mt-1">Error message goes here</p>
                         </div>
                         <div className="mt-6">
                             <label
@@ -238,6 +245,7 @@ function SignInUp() {
                                 placeholder="Enter Captcha"
                                 type="text"
                             />
+                            <p className="text-xs font-medium leading-none text-red-500 mt-1">Error message goes here</p>
                         </div>
                         <div className="mt-6">
                             <button
@@ -270,4 +278,4 @@ function SignInUp() {
     );
 }
 
-export default SignInUp;
+export default SignInUp1;
