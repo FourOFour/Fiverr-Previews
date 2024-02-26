@@ -1,6 +1,6 @@
 import { useState } from "react";
-import KarabonLogo from "../../assets/svg/logo/karabon.svg?react";
-import CheckIcon from "../../assets/svg/icons/check.svg?react";
+import KarabonLogo from "../../../assets/svg/logo/karabon.svg?react";
+import CheckIcon from "../../../assets/svg/icons/check.svg?react";
 
 function SignInUp1() {
     const [checked, setChecked] = useState(false);

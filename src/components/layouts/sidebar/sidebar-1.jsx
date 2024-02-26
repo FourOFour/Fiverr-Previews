@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
-import SunIcon from "../../assets/svg/icons/sun.svg?react";
-import MoonIcon from "../../assets/svg/icons/moon.svg?react";
-import HomeIcon from "../../assets/svg/icons/home.svg?react";
-import ProfileIcon from "../../assets/svg/icons/profile.svg?react";
-import SettingIcon from "../../assets/svg/icons/setting.svg?react";
+import SunIcon from "../../../assets/svg/icons/sun.svg?react";
+import MoonIcon from "../../../assets/svg/icons/moon.svg?react";
+import HomeIcon from "../../../assets/svg/icons/home.svg?react";
+import ProfileIcon from "../../../assets/svg/icons/profile.svg?react";
+import SettingIcon from "../../../assets/svg/icons/setting.svg?react";
 
 function Sidebar1(props) {
     return (

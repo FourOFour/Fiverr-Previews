@@ -1,6 +1,6 @@
-import PackageIcon from "../../assets/svg/icons/package.svg?react";
-import KarabonLogo from "../../assets/svg/logo/karabon.svg?react";
-import ArrowDownIcon from "../../assets/svg/icons/arrow-down.svg?react";
+import PackageIcon from "../../../assets/svg/icons/package.svg?react";
+import KarabonLogo from "../../../assets/svg/logo/karabon.svg?react";
+import ArrowDownIcon from "../../../assets/svg/icons/arrow-down.svg?react";
 
 function Navbar1() {
     return (
@@ -34,7 +34,7 @@ function Navbar1() {
                         >
                             Pricing
                         </a>
-                        <div className="absolute w-48 hidden">
+                        <div className="absolute w-48 top-0 right-0 hidden">
                             <div>Basic</div>
                             <div>Pro</div>
                             <div>Enterprise</div>

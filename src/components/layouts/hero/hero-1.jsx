@@ -1,6 +1,6 @@
-import TwitterIcon from "../../assets/svg/icons/twitter.svg?react";
-import InstagramIcon from "../../assets/svg/icons/instagram.svg?react";
-import FacebookIcon from "../../assets/svg/icons/facebook.svg?react";
+import TwitterIcon from "../../../assets/svg/icons/twitter.svg?react";
+import InstagramIcon from "../../../assets/svg/icons/instagram.svg?react";
+import FacebookIcon from "../../../assets/svg/icons/facebook.svg?react";
 
 function Hero1() {
     return (
