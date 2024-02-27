@@ -1,9 +1,10 @@
 /** @type {import('tailwindcss').Config} */
+// eslint-disable-next-line @typescript-eslint/no-var-requires, no-undef
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 export default {
-    darkMode: "class",
-    content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+    darkMode: "selector",
+    content: ["./src/**/*.{js,ts,jsx,tsx}"],
     theme: {
         extend: {
             fontFamily: {
