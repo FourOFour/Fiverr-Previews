@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './App.css'
+import './App1.css'
 import Hero1 from './components/layouts/hero/hero-1';
 import Navbar1 from './components/layouts/navbar/navbar-1';
 import Pricing1 from './components/layouts/pricing/pricing-1';
