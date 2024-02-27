@@ -1,11 +1,11 @@
-import PropTypes from "prop-types";
-import SunIcon from "../../../assets/svg/icons/sun.svg?react";
-import MoonIcon from "../../../assets/svg/icons/moon.svg?react";
-import HomeIcon from "../../../assets/svg/icons/home.svg?react";
-import ProfileIcon from "../../../assets/svg/icons/profile.svg?react";
-import SettingIcon from "../../../assets/svg/icons/setting.svg?react";
+import SunIcon from "../../../assets/svg/icons/sun.svg";
+import MoonIcon from "../../../assets/svg/icons/moon.svg";
+import HomeIcon from "../../../assets/svg/icons/home.svg";
+import ProfileIcon from "../../../assets/svg/icons/profile.svg";
+import SettingIcon from "../../../assets/svg/icons/setting.svg";
+import { Sidebar1Props } from "./sidebar-1.interface";
 
-function Sidebar1(props) {
+function Sidebar1(props: Sidebar1Props) {
     return (
         <>
             <aside className="md:left-0 md:block md:fixed md:top-0 md:bottom-0 md:overflow-y-auto md:overflow-hidden md:shadow-xl relative md:w-48 z-10 bg-white dark:bg-gray-900 md:border-r-[1px] md:border-gray-300 dark:border-gray-600">
@@ -68,10 +68,5 @@ function Sidebar1(props) {
         </>
     );
 }
-
-Sidebar1.propTypes = {
-    toggleIsDark: PropTypes.func,
-    isDark: PropTypes.bool,
-};
 
 export default Sidebar1;

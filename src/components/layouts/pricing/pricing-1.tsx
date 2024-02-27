@@ -1,6 +1,6 @@
-import PlusIcon from "../../../assets/svg/icons/plus.svg?react";
-import PriceTagIcon from "../../../assets/svg/icons/price-tag.svg?react";
-import CircleIcon from "../../../assets/svg/icons/circle.svg?react";
+import PlusIcon from "../../../assets/svg/icons/plus.svg";
+import PriceTagIcon from "../../../assets/svg/icons/price-tag.svg";
+import CircleIcon from "../../../assets/svg/icons/circle.svg";
 
 function Pricing1() {
     return (

@@ -1,6 +1,6 @@
-import PackageIcon from "../../../assets/svg/icons/package.svg?react";
-import KarabonLogo from "../../../assets/svg/logo/karabon.svg?react";
-import ArrowDownIcon from "../../../assets/svg/icons/arrow-down.svg?react";
+import PackageIcon from "../../../assets/svg/icons/package.svg";
+import KarabonLogo from "../../../assets/svg/logo/karabon.svg";
+import ArrowDownIcon from "../../../assets/svg/icons/arrow-down.svg";
 
 function Navbar1() {
     return (
@@ -45,7 +45,7 @@ function Navbar1() {
                     </a>
                     <div className="relative">
                         <a
-                            className="inline-flex h-8 w-8 rounded-full border border-gray-200 items-center justify-center overflow-hidden hover:ring ring-gray-900/40 dark:ring-gray-50/40 hover:ring-[1px]"
+                            className="inline-flex h-8 w-8 rounded-full border border-gray-200 items-center justify-center overflow-hidden ring-gray-900/40 dark:ring-gray-50/40 hover:ring-[1px]"
                             href="#"
                         >
                             <ArrowDownIcon

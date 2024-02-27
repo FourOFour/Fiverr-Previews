@@ -1,6 +1,6 @@
 import { useState } from "react";
-import KarabonLogo from "../../../assets/svg/logo/karabon.svg?react";
-import CheckIcon from "../../../assets/svg/icons/check.svg?react";
+import KarabonLogo from "../../../assets/svg/logo/karabon.svg";
+import CheckIcon from "../../../assets/svg/icons/check.svg";
 
 function SignInUp1() {
     const [checked, setChecked] = useState(false);
@@ -75,7 +75,7 @@ function SignInUp1() {
                                         data-state={
                                             checked ? "checked" : "unchecked"
                                         }
-                                        className="flex items-center justify-center text-current data-[state=checked]:block hidden"
+                                        className="items-center justify-center text-current data-[state=checked]:block hidden"
                                         style={{
                                             pointerEvents: "none",
                                         }}
@@ -87,7 +87,7 @@ function SignInUp1() {
                                 </button>
                                 <input
                                     aria-hidden="true"
-                                    tabIndex="-1"
+                                    tabIndex={-1}
                                     id="remember"
                                     type="checkbox"
                                     value="on"

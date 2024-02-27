@@ -1,6 +1,7 @@
-import TwitterIcon from "../../../assets/svg/icons/twitter.svg?react";
-import InstagramIcon from "../../../assets/svg/icons/instagram.svg?react";
-import FacebookIcon from "../../../assets/svg/icons/facebook.svg?react";
+// import TwitterIcon from "../../../assets/svg/icons/twitter.svg";
+import TwitterIcon from "../../../assets/svg/icons/twitter.svg";
+import InstagramIcon from "../../../assets/svg/icons/instagram.svg";
+import FacebookIcon from "../../../assets/svg/icons/facebook.svg";
 
 function Hero1() {
     return (
@@ -46,7 +47,7 @@ function Hero1() {
                             className="h-10 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 rounded-l-full rounded-r-full md:rounded-r-none flex-auto"
                             placeholder="Enter your email"
                         />
-                        <button className="inline-flex items-center justify-center flex-none md:w-32 whitespace-nowrap rounded-md font-medium transition-colors rounded-r-full rounded-l-full md:rounded-l-none md:translate-x-2 ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 py-2 px-4 text-center bg-blue-800 hover:bg-blue-700 rounded-md text-white text-sm focus:outline-none uppercase">
+                        <button className="inline-flex items-center justify-center flex-none md:w-32 whitespace-nowrap rounded-md font-medium transition-colors rounded-r-full rounded-l-full md:rounded-l-none md:translate-x-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 py-2 px-4 text-center bg-blue-800 hover:bg-blue-700 text-white text-sm focus:outline-none uppercase">
                             Yes, I&apos;m in
                         </button>
                     </div>
