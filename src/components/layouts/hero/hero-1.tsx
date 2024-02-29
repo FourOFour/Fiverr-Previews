@@ -6,7 +6,7 @@ import FacebookIcon from "../../../assets/svg/icons/facebook.svg";
 function Hero1() {
     return (
         <>
-            <section className="relative w-full min-h-[400px] sm:grid items:center dark:text-white text-black px-4 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 dark:from-gray-700 dark:via-gray-800 dark:to-gray-900 pb-10">
+            <section className="relative w-full min-h-screen sm:grid items:center dark:text-white text-black px-4 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 dark:from-gray-700 dark:via-gray-800 dark:to-gray-900 pb-10">
                 <img
                     alt="Hero"
                     className="absolute inset-0 object-cover w-full h-full bg-cover z-[1] dark:block hidden"
