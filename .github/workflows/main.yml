@@ -1,13 +1,17 @@
 # Simple workflow for deploying static content to GitHub Pages
 name: Deploy static content to Pages
 
-on: [push]
-    # Runs on pushes targeting the develop branch
-    # push:
-    #     branches: [ 'develop' ]
-
+on: 
+    # Set your workflow to run on push events to the develop and all feature branches
+    push:
+        branches:
+          - develop
+    # Set your workflow to run on pull request events that target the main branch
+    pull_request:
+        branches: 
+          - main
     # Allows you to run this workflow manually from the Actions tab
-    # workflow_dispatch:
+    workflow_dispatch:
 
 # Sets the GITHUB_TOKEN permissions to allow deployment to GitHub Pages
 permissions:
