@@ -39,7 +39,6 @@ jobs:
             - name: Move react app files to root
               run: |
                 ls -lah
-                shopt -s dotglob
                 mv react/react/* react/
                 rm -rf react/react
                 ls -lah
