@@ -40,7 +40,6 @@ jobs:
               run: |
                 ls -lah
                 shopt -s dotglob
-                cd react
                 mv react/* .
                 rm -rf react
                 ls -lah
