@@ -32,7 +32,6 @@ jobs:
               uses: actions/checkout@v4
               with:
                 ref: main
-                path: react
             - name: Set up Node
               uses: actions/setup-node@v4
               with:
@@ -41,19 +40,27 @@ jobs:
                   cache-dependency-path: react/package-lock.json
             - name: Install dependencies
               run: |
-                cd react
+                cd react/react
                 npm install
             - name: Build
               run: |
-                cd react
+                cd react/react
                 npm run build
+            - name: Move Dist
+              run: |
+                ls -lah
+                mv react/dist/* ./react2
+                rm -rf react
+                mv react2/* ./react
+                rm -rf react2
+                ls -lah
             - name: Setup Pages
               uses: actions/configure-pages@v4
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v3
-              with:
+              # with:
                   # Upload dist repository
-                  path: "./react/dist"
+                  # path: "./react/react/dist"
             - name: Deploy to GitHub Pages
               id: deployment
               uses: actions/deploy-pages@v4
