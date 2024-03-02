@@ -32,7 +32,7 @@ jobs:
               uses: actions/checkout@v4
               with:
                 ref: main
-                # path: react
+                path: react
                 sparse-checkout: |
                   react
                 sparse-checkout-cone-mode: false
