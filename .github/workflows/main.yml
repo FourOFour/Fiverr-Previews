@@ -36,6 +36,13 @@ jobs:
                 sparse-checkout: |
                   react
                 sparse-checkout-cone-mode: false
+            - name: Move react app files to root
+              run: |
+                ls -lah
+                shopt -s dotglob
+                mv react/* .
+                rm -rf react
+                ls -lah
             - name: Set up Node
               uses: actions/setup-node@v4
               with:
