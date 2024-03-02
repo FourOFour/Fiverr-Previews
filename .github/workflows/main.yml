@@ -40,11 +40,11 @@ jobs:
                   cache-dependency-path: react/package-lock.json
             - name: Install dependencies
               run: |
-                cd react/react
+                cd react
                 npm install
             - name: Build
               run: |
-                cd react/react
+                cd react
                 npm run build
             - name: Move Dist
               run: |
