@@ -42,6 +42,9 @@ jobs:
                 mv react/react/* react/
                 rm -rf react/react
                 ls -lah
+            - name: Move react app files to root
+              run: |
+                cd react
             - name: Set up Node
               uses: actions/setup-node@v4
               with:
