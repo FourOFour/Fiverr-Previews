@@ -30,7 +30,7 @@ jobs:
         steps:
             - name: Directory
               working-directory: ./react
-              run: cd './react'
+              run: cd 'react'
             - name: Checkout
               uses: actions/checkout@v4
             - name: Set up Node
