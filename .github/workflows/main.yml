@@ -32,7 +32,7 @@ jobs:
               uses: actions/checkout@v4
               with:
                 ref: main
-                path: react
+                # path: react
                 sparse-checkout: |
                   react
                 sparse-checkout-cone-mode: false
@@ -40,8 +40,9 @@ jobs:
               run: |
                 ls -lah
                 shopt -s dotglob
-                mv react/react/* ./react
-                rm -rf react/react
+                cd react
+                mv react/* .
+                rm -rf react
                 ls -lah
             - name: Set up Node
               uses: actions/setup-node@v4
