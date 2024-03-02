@@ -27,24 +27,24 @@ jobs:
             name: github-pages
             url: ${{ steps.deployment.outputs.page_url }}
         runs-on: ubuntu-latest
+        defaults:
+          run:
+            working-directory: react
         steps:
             - name: Checkout
               uses: actions/checkout@v4
               with:
                 ref: main
                 path: react
-                sparse-checkout: |
-                  react
-                sparse-checkout-cone-mode: false
-            - name: Move react app files to root
-              run: |
-                ls -lah
-                mv react/react/* react/
-                rm -rf react/react
-                ls -lah
-            - name: Move react app files to root
-              run: |
-                cd react
+                # sparse-checkout: |
+                #   react
+                # sparse-checkout-cone-mode: false
+            # - name: Move react app files to root
+            #   run: |
+            #     ls -lah
+            #     mv react/react/* react/
+            #     rm -rf react/react
+            #     ls -lah
             - name: Set up Node
               uses: actions/setup-node@v4
               with:
