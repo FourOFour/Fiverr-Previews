@@ -28,12 +28,11 @@ jobs:
             url: ${{ steps.deployment.outputs.page_url }}
         runs-on: ubuntu-latest
         steps:
-            - name: Checkout
-              with: 
-                path: "./react"
-              uses: actions/checkout@v4
-            - name: Go to React
+            - name: Directory
+              working-directory: ./react
               run: cd './react'
+            - name: Checkout
+              uses: actions/checkout@v4
             - name: Set up Node
               uses: actions/setup-node@v3
               with:
