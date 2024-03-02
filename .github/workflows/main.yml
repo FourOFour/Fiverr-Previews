@@ -29,6 +29,8 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout
+              with: 
+                path: "./react"
               uses: actions/checkout@v4
             - name: Set up Node
               uses: actions/setup-node@v3

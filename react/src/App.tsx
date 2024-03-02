@@ -5,6 +5,7 @@ import Navbar1 from './components/layouts/navbar/navbar-1';
 import Pricing1 from './components/layouts/pricing/pricing-1';
 import SignInUp1 from './components/layouts/sign-in-up/sign-in-up-1';
 import Sidebar1 from './components/layouts/sidebar/sidebar-1';
+import Hero2 from './components/layouts/hero/hero-2';
 
 function App() {
   const [isDark, setIsDark] = useState(false);
@@ -22,6 +23,7 @@ function App() {
               <SignInUp1 />
               <Pricing1 />
               <Hero1 />
+              <Hero2 />
           </main>
       </div>
     </>
