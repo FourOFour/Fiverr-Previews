@@ -28,9 +28,6 @@ jobs:
             url: ${{ steps.deployment.outputs.page_url }}
         runs-on: ubuntu-latest
         steps:
-            - name: Go to react
-              working-directory: react
-              run: cd 'react'
             - name: Checkout
               uses: actions/checkout@v4
             - name: Set up Node
@@ -38,6 +35,10 @@ jobs:
               with:
                   node-version: 18
                   cache: "npm"
+              
+            - name: Go to react
+              working-directory: react
+              run: cd 'react'
             - name: Install dependencies
               run: npm install
             - name: Build
