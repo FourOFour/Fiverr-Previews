@@ -5,7 +5,7 @@ on:
     # Set your workflow to run on push events to the develop and all feature branches
     push:
         branches:
-          - develop
+          - main
     # Set your workflow to run on pull request events that target the main branch
     pull_request:
         branches: 
@@ -35,7 +35,7 @@ jobs:
             - name: Checkout
               uses: actions/checkout@v4
               with:
-                ref: 'develop'
+                ref: main
             - name: Set up Node
               uses: actions/setup-node@v4
               with:
