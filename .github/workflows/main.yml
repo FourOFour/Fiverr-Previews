@@ -33,7 +33,7 @@ jobs:
               with:
                 ref: main
                 path: react
-                sparse-checkout: 'react'
+                sparse-checkout: "react"
                 sparse-checkout-cone-mode: false
             - name: Set up Node
               uses: actions/setup-node@v4
