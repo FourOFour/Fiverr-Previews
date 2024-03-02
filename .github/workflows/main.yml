@@ -34,10 +34,11 @@ jobs:
                 ref: develop
                 path: react
             - name: Set up Node
-              uses: actions/setup-node@v3
+              uses: actions/setup-node@v4
               with:
                   node-version: 18
                   cache: "npm"
+                  cache-dependency-path: react/package-lock.json
             - name: Install dependencies
               run: npm install
             - name: Build
