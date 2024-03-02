@@ -52,7 +52,7 @@ jobs:
                 mkdir react2
                 mv react/dist/* ./react2
                 rm -rf react
-                mv react2/* ./react
+                mv react2 react
                 ls -lah
             - name: Setup Pages
               uses: actions/configure-pages@v4
