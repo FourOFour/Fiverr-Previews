@@ -28,9 +28,9 @@ jobs:
             url: ${{ steps.deployment.outputs.page_url }}
         runs-on: ubuntu-latest
         steps:
-            - name: Directory
-              working-directory: /react
-              run: cd '/react'
+            - name: Go to react
+              working-directory: react
+              run: cd 'react'
             - name: Checkout
               uses: actions/checkout@v4
             - name: Set up Node
