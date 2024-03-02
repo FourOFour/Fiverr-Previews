@@ -40,8 +40,8 @@ jobs:
               run: |
                 ls -lah
                 shopt -s dotglob
-                mv react/* .
-                rm -rf react
+                mv react/react/* ./react
+                rm -rf react/react
                 ls -lah
             - name: Set up Node
               uses: actions/setup-node@v4
