@@ -49,8 +49,10 @@ jobs:
             - name: Move Dist
               run: |
                 ls -lah
+                mkdr react2
                 mv react/dist/* ./react2
                 rm -rf react
+                mkdr react
                 mv react2/* ./react
                 rm -rf react2
                 ls -lah
