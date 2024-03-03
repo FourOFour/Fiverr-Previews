@@ -1,3 +1,4 @@
+let BASE_URL = import.meta.env.BASE_URL;
 let topElement = document.getElementById('top');
 let timeOutes = {};
 
@@ -56,3 +57,10 @@ function dataStateBtnClick(e, id) {
     let input = document.getElementById(id);
     input.click();
 }
+
+window.toggleDark = toggleDark;
+window.toggleElement = toggleElement;
+window.timeoutMouseLeave = timeoutMouseLeave;
+window.timeoutMouseEnter = timeoutMouseEnter;
+window.dataStateCheckToggle = dataStateCheckToggle;
+window.dataStateBtnClick = dataStateBtnClick;
