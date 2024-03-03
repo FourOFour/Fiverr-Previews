@@ -1,20 +1,178 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./favIcon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-    <link rel="stylesheet" href="./src/style.css">
-  </head>
-  <body>
-    <div class="bg-gray-950">
-      <div class="container">
-        <h1>
-          hi
-        </h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="./favIcon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div id="top" class="w-full h-full">
+
+    <!-- Sidebar -->
+    <aside
+      class="md:left-0 md:block md:fixed md:top-0 md:bottom-0 md:overflow-y-auto md:overflow-hidden md:shadow-xl relative md:w-48 z-10 bg-white dark:bg-gray-900 md:border-r-[1px] md:border-gray-300 dark:border-gray-600">
+      <div class="flex flex-col dark:text-white">
+        <header class="p-4 flex justify-between relative">
+          <h1 class="text-xl font-bold">My App</h1>
+          <button type="button" aria-pressed="false" data-state="off"
+            class="items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors hover:bg-muted hover:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=on]:bg-accent data-[state=on]:text-accent-foreground bg-transparent h-10 px-3 absolute right-2 top-2"
+            aria-label="Toggle theme" onclick="toggleDark()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="h-4 w-4 hidden dark:block">
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2"></path>
+              <path d="M12 20v2"></path>
+              <path d="m4.93 4.93 1.41 1.41"></path>
+              <path d="m17.66 17.66 1.41 1.41"></path>
+              <path d="M2 12h2"></path>
+              <path d="M20 12h2"></path>
+              <path d="m6.34 17.66-1.41 1.41"></path>
+              <path d="m19.07 4.93-1.41 1.41"></path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="h-4 w-4 dark:hidden block">
+              <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+            </svg>
+          </button>
+        </header>
+        <nav class="mt-4">
+          <ul>
+            <li class="mb-2">
+              <a class="flex items-center py-2 px-4 hover:bg-gray-300 dark:hover:bg-gray-700" href="#">
+                <HomeIcon class="h-6 w-6" />
+                <span class="ml-2">Home</span>
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="flex items-center py-2 px-4 hover:bg-gray-300 dark:hover:bg-gray-700" href="#">
+                <ProfileIcon class="h-6 w-6" />
+                <span class="ml-2">Profile</span>
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="flex items-center py-2 px-4 hover:bg-gray-300 dark:hover:bg-gray-700" href="#">
+                <SettingIcon class="h-6 w-6" />
+                <span class="ml-2">Settings</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </div>
-    <script type="module" src="./main.js"></script>
-  </body>
+    </aside>
+    <!-- end of Sidebar -->
+    <main class="relative md:ml-48">
+      <!-- Navbar1 -->
+
+      <nav
+        class="sm:flex sm:flex-row sm:items-center md:h-14 px-4 border-b-[1px] gap-4 md:gap-6 text-black dark:text-white bg-white dark:bg-gray-900 border-gray-300 dark:border-gray-600">
+        <div class="sm:flex sm:items-center sm:space-x-2 lg:space-x-4">
+          <a class="flex items-center space-x-2 text-lg font-bold" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
+              <path d="m7.5 4.27 9 5.15" />
+              <path
+                d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z" />
+              <path d="m3.3 7 8.7 5 8.7-5" />
+              <path d="M12 22V12" />
+            </svg>
+            <svg width="64" height="32" viewBox="0 0 64 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+              class="block" width=64 height=32>
+              <text x="32" y="16" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif"
+                font-weight="bold" font-size="16">
+                Karabon
+              </text>
+              <text dominant-baseline="middle" font-family="sans-serif" font-size="6" font-weight="bold"
+                text-anchor="start" x="55" y="9">
+                TM
+              </text>
+            </svg>
+          </a>
+        </div>
+        <div class="ml-auto sm:flex sm:items-center sm:space-x-4 text-center sm:text-left mb-5 sm:mb-0">
+          <a class="text-sm font-medium hover:underline" href="#">
+            Documentation
+          </a>
+          <div class="relative">
+            <button class="text-sm font-medium hover:underline" onclick="toggleElement('toggle-target-1')">
+              Pricing
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                class="inline-block ml-1" height=10 width=10>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div
+              class="sm:absolute sm:min-w-48 sm:top-[100%] sm:right-0 text-black dark:text-white sm:bg-white sm:dark:bg-gray-900 sm:border-gray-300 sm:dark:border-gray-600 sm:border-[1px] px-4 py-3 sm:rounded sm:hidden"
+              id="toggle-target-1" onmouseenter="timeoutMouseEnter(event)" onmouseleave="timeoutMouseLeave(event)">
+              <a class="text-sm font-medium hover:underline block sm:border-b-[1px] border-gray-300 dark:border-gray-600 mb-2 pb-1"
+                href="#">
+                Basic
+              </a>
+              <a class="text-sm font-medium hover:underline block sm:border-b-[1px] border-gray-300 dark:border-gray-600 mb-2 pb-1"
+                href="#">
+                Pro
+              </a>
+              <a class="text-sm font-medium hover:underline block" href="#">
+                Enterprise
+              </a>
+            </div>
+          </div>
+          <a class="text-sm font-medium hover:underline" href="#">
+            Contact Sales
+          </a>
+          <div class="relative">
+            <button
+              class="inline-flex h-8 w-8 rounded-full border border-gray-200 items-center justify-center overflow-hidden ring-gray-900/40 dark:ring-gray-50/40 hover:ring-[1px]"
+              onclick="toggleElement('toggle-target-2')">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                class="rounded-full" height=16 width=16>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+              <!-- <img alt="Avatar" class="rounded-full" height={16} width={16} src="/placeholder.svg"} -->
+              <span class="sr-only">
+                Toggle navigation menu
+              </span>
+            </button>
+            <div
+              class="sm:absolute sm:min-w-48 sm:top-[100%] sm:right-0 text-black dark:text-white sm:bg-white sm:dark:bg-gray-900 sm:border-gray-300 sm:dark:border-gray-600 sm:border-[1px] px-5 py-3 sm:rounded text-center sm:hidden"
+              id="toggle-target-2" onmouseenter="timeoutMouseEnter(event)" onmouseleave="timeoutMouseLeave(event)">
+              <a class="text-sm font-medium hover:underline block mb-2" href="#">
+                user@email.com
+              </a>
+              <a class="inline-flex h-12 w-12 rounded-full border border-gray-200 items-center justify-center overflow-hidden ring-gray-900/40 dark:ring-gray-50/40 hover:ring-[1px] mb-2"
+                href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  class="rounded-full mx-auto" height=32 width=32>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+                  <!-- <img alt="Avatar" class="rounded-full mx-auto" height={32} width={32} src="/placeholder.svg"/> -->
+              </a>
+              <a class="text-sm font-medium hover:underline block mb-2" href="#">
+                Username
+              </a>
+              <a class="text-sm font-medium hover:underline block mb-2" href="#">
+                action button
+              </a>
+              <a class="text-sm font-medium hover:underline block" href="#">
+                an other action button
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- end of Navbar1 -->
+      <!-- <SignInUp1 /> -->
+      <!-- <Pricing1 /> -->
+      <!-- <Hero1 /> -->
+      <!-- <Hero2 /> -->
+    </main>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
 </html>
