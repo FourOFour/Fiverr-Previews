@@ -105,13 +105,13 @@ function Pricing1() {
                                             role="button"
                                             className="flex items-center w-full p-0 leading-tight transition-all rounded-lg outline-none text-start hover:bg-blue-gray-50 hover:bg-opacity-80 hover:text-blue-gray-900 focus:bg-blue-gray-50 focus:bg-opacity-80 focus:text-blue-gray-900 active:bg-blue-gray-50 active:bg-opacity-80 active:text-blue-gray-900"
                                         >
-                                            <div
+                                            <label
                                                 htmlFor="horizontal-list-vue-1"
                                                 className="flex items-center w-full px-3 py-2 cursor-pointer"
                                             >
                                                 <div className="grid mr-3 place-items-center">
                                                     <div className="inline-flex items-center">
-                                                        <label
+                                                        <div
                                                             className="relative flex items-center p-0 rounded-full cursor-pointer"
                                                         >
                                                             <input
@@ -123,13 +123,13 @@ function Pricing1() {
                                                             <span className="absolute text-gray-900 transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
                                                                 <CircleIcon className="h-3.5 w-3.5" />
                                                             </span>
-                                                        </label>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <p className="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-400">
                                                     Yearly
                                                 </p>
-                                            </div>
+                                            </label>
                                         </li>
                                     </ul>
                                 </li>
