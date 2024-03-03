@@ -33,3 +33,26 @@ function timeoutMouseEnter(e) {
 
     clearTimeout(timeOutes[id]);
 }
+
+function dataStateCheckToggle(e, button, span) {
+    let element = e.target;
+    let btn = document.getElementById(button);
+    let check = document.getElementById(span);
+
+    if (e.target.checked) {
+        btn.setAttribute('aria-checked', 'checked')
+        btn.setAttribute('data-state', 'checked')
+        check.setAttribute('data-state', 'checked')
+    } else {
+        btn.setAttribute('aria-checked', 'unchecked')
+        btn.setAttribute('data-state', 'unchecked')
+        check.setAttribute('data-state', 'unchecked')
+    }
+
+}
+
+function dataStateBtnClick(e, id) {
+    let element = e.target;
+    let input = document.getElementById(id);
+    input.click();
+}

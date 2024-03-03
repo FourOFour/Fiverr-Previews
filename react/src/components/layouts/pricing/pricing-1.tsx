@@ -6,7 +6,6 @@ function Pricing1() {
     return (
         <>
             <section
-                key="1"
                 className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 dark:from-gray-700 dark:via-gray-800 dark:to-gray-900"
             >
                 <div className="container px-4 text-center md:px-6 lg:gap-10 dark:text-white mx-auto">
@@ -82,9 +81,8 @@ function Pricing1() {
                                             >
                                                 <div className="grid mr-3 place-items-center">
                                                     <div className="inline-flex items-center">
-                                                        <label
+                                                        <div
                                                             className="relative flex items-center p-0 rounded-full cursor-pointer"
-                                                            htmlFor="horizontal-list-react-1"
                                                         >
                                                             <input
                                                                 name="horizontal-list-1"
@@ -95,7 +93,7 @@ function Pricing1() {
                                                             <span className="absolute text-gray-900 transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
                                                                 <CircleIcon className="h-3.5 w-3.5" />
                                                             </span>
-                                                        </label>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <p className="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-400">
@@ -107,7 +105,7 @@ function Pricing1() {
                                             role="button"
                                             className="flex items-center w-full p-0 leading-tight transition-all rounded-lg outline-none text-start hover:bg-blue-gray-50 hover:bg-opacity-80 hover:text-blue-gray-900 focus:bg-blue-gray-50 focus:bg-opacity-80 focus:text-blue-gray-900 active:bg-blue-gray-50 active:bg-opacity-80 active:text-blue-gray-900"
                                         >
-                                            <label
+                                            <div
                                                 htmlFor="horizontal-list-vue-1"
                                                 className="flex items-center w-full px-3 py-2 cursor-pointer"
                                             >
@@ -115,7 +113,6 @@ function Pricing1() {
                                                     <div className="inline-flex items-center">
                                                         <label
                                                             className="relative flex items-center p-0 rounded-full cursor-pointer"
-                                                            htmlFor="horizontal-list-vue-1"
                                                         >
                                                             <input
                                                                 name="horizontal-list-1"
@@ -132,7 +129,7 @@ function Pricing1() {
                                                 <p className="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-400">
                                                     Yearly
                                                 </p>
-                                            </label>
+                                            </div>
                                         </li>
                                     </ul>
                                 </li>
@@ -201,25 +198,24 @@ function Pricing1() {
                                             className="flex items-center w-full p-0 leading-tight transition-all rounded-lg outline-none text-start hover:bg-blue-gray-50 hover:bg-opacity-80 hover:text-blue-gray-900 focus:bg-blue-gray-50 focus:bg-opacity-80 focus:text-blue-gray-900 active:bg-blue-gray-50 active:bg-opacity-80 active:text-blue-gray-900"
                                         >
                                             <label
-                                                htmlFor="horizontal-list-react-1"
+                                                htmlFor="horizontal-list-react-2"
                                                 className="flex items-center w-full px-3 py-2 cursor-pointer"
                                             >
                                                 <div className="grid mr-3 place-items-center">
                                                     <div className="inline-flex items-center">
-                                                        <label
+                                                        <div
                                                             className="relative flex items-center p-0 rounded-full cursor-pointer"
-                                                            htmlFor="horizontal-list-react-1"
                                                         >
                                                             <input
-                                                                name="horizontal-list-1"
-                                                                id="horizontal-list-react-1"
+                                                                name="horizontal-list-2"
+                                                                id="horizontal-list-react-2"
                                                                 type="radio"
                                                                 className="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-gray-200 text-gray-900 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-gray-900 checked:before:bg-gray-900 hover:before:opacity-0"
                                                             />
                                                             <span className="absolute text-gray-900 transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
                                                                 <CircleIcon className="h-3.5 w-3.5" />
                                                             </span>
-                                                        </label>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <p className="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-400">
@@ -232,25 +228,24 @@ function Pricing1() {
                                             className="flex items-center w-full p-0 leading-tight transition-all rounded-lg outline-none text-start hover:bg-blue-gray-50 hover:bg-opacity-80 hover:text-blue-gray-900 focus:bg-blue-gray-50 focus:bg-opacity-80 focus:text-blue-gray-900 active:bg-blue-gray-50 active:bg-opacity-80 active:text-blue-gray-900"
                                         >
                                             <label
-                                                htmlFor="horizontal-list-vue-1"
+                                                htmlFor="horizontal-list-vue-2"
                                                 className="flex items-center w-full px-3 py-2 cursor-pointer"
                                             >
                                                 <div className="grid mr-3 place-items-center">
                                                     <div className="inline-flex items-center">
-                                                        <label
+                                                        <div
                                                             className="relative flex items-center p-0 rounded-full cursor-pointer"
-                                                            htmlFor="horizontal-list-vue-1"
                                                         >
                                                             <input
-                                                                name="horizontal-list-1"
-                                                                id="horizontal-list-vue-1"
+                                                                name="horizontal-list-2"
+                                                                id="horizontal-list-vue-2"
                                                                 type="radio"
                                                                 className="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-gray-200 text-gray-900 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-gray-900 checked:before:bg-gray-900 hover:before:opacity-0"
                                                             />
                                                             <span className="absolute text-gray-900 transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
                                                                 <CircleIcon className="h-3.5 w-3.5" />
                                                             </span>
-                                                        </label>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <p className="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-400">
@@ -325,25 +320,24 @@ function Pricing1() {
                                             className="flex items-center w-full p-0 leading-tight transition-all rounded-lg outline-none text-start hover:bg-blue-gray-50 hover:bg-opacity-80 hover:text-blue-gray-900 focus:bg-blue-gray-50 focus:bg-opacity-80 focus:text-blue-gray-900 active:bg-blue-gray-50 active:bg-opacity-80 active:text-blue-gray-900"
                                         >
                                             <label
-                                                htmlFor="horizontal-list-react-1"
+                                                htmlFor="horizontal-list-react-3"
                                                 className="flex items-center w-full px-3 py-2 cursor-pointer"
                                             >
                                                 <div className="grid mr-3 place-items-center">
                                                     <div className="inline-flex items-center">
-                                                        <label
+                                                        <div
                                                             className="relative flex items-center p-0 rounded-full cursor-pointer"
-                                                            htmlFor="horizontal-list-react-1"
                                                         >
                                                             <input
-                                                                name="horizontal-list-1"
-                                                                id="horizontal-list-react-1"
+                                                                name="horizontal-list-3"
+                                                                id="horizontal-list-react-3"
                                                                 type="radio"
                                                                 className="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-gray-200 text-gray-900 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-gray-900 checked:before:bg-gray-900 hover:before:opacity-0"
                                                             />
                                                             <span className="absolute text-gray-900 transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
                                                                 <CircleIcon className="h-3.5 w-3.5" />
                                                             </span>
-                                                        </label>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <p className="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-400">
@@ -356,25 +350,24 @@ function Pricing1() {
                                             className="flex items-center w-full p-0 leading-tight transition-all rounded-lg outline-none text-start hover:bg-blue-gray-50 hover:bg-opacity-80 hover:text-blue-gray-900 focus:bg-blue-gray-50 focus:bg-opacity-80 focus:text-blue-gray-900 active:bg-blue-gray-50 active:bg-opacity-80 active:text-blue-gray-900"
                                         >
                                             <label
-                                                htmlFor="horizontal-list-vue-1"
+                                                htmlFor="horizontal-list-vue-3"
                                                 className="flex items-center w-full px-3 py-2 cursor-pointer"
                                             >
                                                 <div className="grid mr-3 place-items-center">
                                                     <div className="inline-flex items-center">
-                                                        <label
+                                                        <div
                                                             className="relative flex items-center p-0 rounded-full cursor-pointer"
-                                                            htmlFor="horizontal-list-vue-1"
                                                         >
                                                             <input
-                                                                name="horizontal-list-1"
-                                                                id="horizontal-list-vue-1"
+                                                                name="horizontal-list-3"
+                                                                id="horizontal-list-vue-3"
                                                                 type="radio"
                                                                 className="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-gray-200 text-gray-900 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-gray-900 checked:before:bg-gray-900 hover:before:opacity-0"
                                                             />
                                                             <span className="absolute text-gray-900 transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
                                                                 <CircleIcon className="h-3.5 w-3.5" />
                                                             </span>
-                                                        </label>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <p className="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-400">

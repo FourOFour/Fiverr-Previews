@@ -2,193 +2,1061 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="./favIcon.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
-  <link rel="stylesheet" href="./style.css">
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/svg+xml" href="./favIcon.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Vite App</title>
+	<link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-  <div id="top" class="w-full h-full">
+	<div id="top" class="w-full h-full">
 
-    <!-- Sidebar -->
-    <aside
-      class="md:left-0 md:block md:fixed md:top-0 md:bottom-0 md:overflow-y-auto md:overflow-hidden md:shadow-xl relative md:w-48 z-10 bg-white dark:bg-gray-900 md:border-r-[1px] md:border-gray-300 dark:border-gray-600">
-      <div class="flex flex-col dark:text-white">
-        <header class="p-4 flex justify-between relative">
-          <h1 class="text-xl font-bold">My App</h1>
-          <button type="button" aria-pressed="false" data-state="off"
-            class="items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors hover:bg-muted hover:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=on]:bg-accent data-[state=on]:text-accent-foreground bg-transparent h-10 px-3 absolute right-2 top-2"
-            aria-label="Toggle theme" onclick="toggleDark()">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="h-4 w-4 hidden dark:block">
-              <circle cx="12" cy="12" r="4"></circle>
-              <path d="M12 2v2"></path>
-              <path d="M12 20v2"></path>
-              <path d="m4.93 4.93 1.41 1.41"></path>
-              <path d="m17.66 17.66 1.41 1.41"></path>
-              <path d="M2 12h2"></path>
-              <path d="M20 12h2"></path>
-              <path d="m6.34 17.66-1.41 1.41"></path>
-              <path d="m19.07 4.93-1.41 1.41"></path>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="h-4 w-4 dark:hidden block">
-              <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
-            </svg>
-          </button>
-        </header>
-        <nav class="mt-4">
-          <ul>
-            <li class="mb-2">
-              <a class="flex items-center py-2 px-4 hover:bg-gray-300 dark:hover:bg-gray-700" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
-                  <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                </svg>
-                <span class="ml-2">Home</span>
-              </a>
-            </li>
-            <li class="mb-2">
-              <a class="flex items-center py-2 px-4 hover:bg-gray-300 dark:hover:bg-gray-700" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
-                  <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
-                  <circle cx="12" cy="7" r="4"></circle>
-                </svg>
-                <span class="ml-2">Profile</span>
-              </a>
-            </li>
-            <li class="mb-2">
-              <a class="flex items-center py-2 px-4 hover:bg-gray-300 dark:hover:bg-gray-700" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
-                  <path
-                    d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z">
-                  </path>
-                  <circle cx="12" cy="12" r="3"></circle>
-                </svg>
-                <span class="ml-2">Settings</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </aside>
-    <!-- end of Sidebar -->
-    <main class="relative md:ml-48">
-      <!-- Navbar1 -->
-      <nav
-        class="sm:flex sm:flex-row sm:items-center md:h-14 px-4 border-b-[1px] gap-4 md:gap-6 text-black dark:text-white bg-white dark:bg-gray-900 border-gray-300 dark:border-gray-600">
-        <div class="sm:flex sm:items-center sm:space-x-2 lg:space-x-4">
-          <a class="flex items-center space-x-2 text-lg font-bold" href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
-              <path d="m7.5 4.27 9 5.15" />
-              <path
-                d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z" />
-              <path d="m3.3 7 8.7 5 8.7-5" />
-              <path d="M12 22V12" />
-            </svg>
-            <svg width="64" height="32" viewBox="0 0 64 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
-              class="block" width=64 height=32>
-              <text x="32" y="16" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif"
-                font-weight="bold" font-size="16">
-                Karabon
-              </text>
-              <text dominant-baseline="middle" font-family="sans-serif" font-size="6" font-weight="bold"
-                text-anchor="start" x="55" y="9">
-                TM
-              </text>
-            </svg>
-          </a>
-        </div>
-        <div class="ml-auto sm:flex sm:items-center sm:space-x-4 text-center sm:text-left mb-5 sm:mb-0">
-          <a class="text-sm font-medium hover:underline" href="#">
-            Documentation
-          </a>
-          <div class="relative">
-            <button class="text-sm font-medium hover:underline" onclick="toggleElement('toggle-target-1')">
-              Pricing
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                class="inline-block ml-1" height=10 width=10>
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </button>
-            <div
-              class="sm:absolute sm:min-w-48 sm:top-[100%] sm:right-0 text-black dark:text-white sm:bg-white sm:dark:bg-gray-900 sm:border-gray-300 sm:dark:border-gray-600 sm:border-[1px] px-4 py-3 sm:rounded sm:hidden"
-              id="toggle-target-1" onmouseenter="timeoutMouseEnter(event)" onmouseleave="timeoutMouseLeave(event)">
-              <a class="text-sm font-medium hover:underline block sm:border-b-[1px] border-gray-300 dark:border-gray-600 mb-2 pb-1"
-                href="#">
-                Basic
-              </a>
-              <a class="text-sm font-medium hover:underline block sm:border-b-[1px] border-gray-300 dark:border-gray-600 mb-2 pb-1"
-                href="#">
-                Pro
-              </a>
-              <a class="text-sm font-medium hover:underline block" href="#">
-                Enterprise
-              </a>
-            </div>
-          </div>
-          <a class="text-sm font-medium hover:underline" href="#">
-            Contact Sales
-          </a>
-          <div class="relative">
-            <button
-              class="inline-flex h-8 w-8 rounded-full border border-gray-200 items-center justify-center overflow-hidden ring-gray-900/40 dark:ring-gray-50/40 hover:ring-[1px]"
-              onclick="toggleElement('toggle-target-2')">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                class="rounded-full" height=16 width=16>
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-              <!-- <img alt="Avatar" class="rounded-full" height={16} width={16} src="/placeholder.svg"} -->
-              <span class="sr-only">
-                Toggle navigation menu
-              </span>
-            </button>
-            <div
-              class="sm:absolute sm:min-w-48 sm:top-[100%] sm:right-0 text-black dark:text-white sm:bg-white sm:dark:bg-gray-900 sm:border-gray-300 sm:dark:border-gray-600 sm:border-[1px] px-5 py-3 sm:rounded text-center sm:hidden"
-              id="toggle-target-2" onmouseenter="timeoutMouseEnter(event)" onmouseleave="timeoutMouseLeave(event)">
-              <a class="text-sm font-medium hover:underline block mb-2" href="#">
-                user@email.com
-              </a>
-              <a class="inline-flex h-12 w-12 rounded-full border border-gray-200 items-center justify-center overflow-hidden ring-gray-900/40 dark:ring-gray-50/40 hover:ring-[1px] mb-2"
-                href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                  class="rounded-full mx-auto" height=32 width=32>
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-                <!-- <img alt="Avatar" class="rounded-full mx-auto" height={32} width={32} src="/placeholder.svg"/> -->
-              </a>
-              <a class="text-sm font-medium hover:underline block mb-2" href="#">
-                Username
-              </a>
-              <a class="text-sm font-medium hover:underline block mb-2" href="#">
-                action button
-              </a>
-              <a class="text-sm font-medium hover:underline block" href="#">
-                an other action button
-              </a>
-            </div>
-          </div>
-        </div>
-      </nav>
-      <!-- end of Navbar1 -->
-      <!-- SignInUp1 -->
-      <!-- <SignInUp1 /> -->
-      <!-- end of SignInUp1 -->
+		<!-- Sidebar -->
+		<aside
+			class="md:left-0 md:block md:fixed md:top-0 md:bottom-0 md:overflow-y-auto md:overflow-hidden md:shadow-xl relative md:w-48 z-10 bg-white dark:bg-gray-900 md:border-r-[1px] md:border-gray-300 dark:border-gray-600">
+			<div class="flex flex-col dark:text-white">
+				<header class="p-4 flex justify-between relative">
+					<h1 class="text-xl font-bold">My App</h1>
+					<button type="button" aria-pressed="false" data-state="off"
+						class="items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors hover:bg-muted hover:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=on]:bg-accent data-[state=on]:text-accent-foreground bg-transparent h-10 px-3 absolute right-2 top-2"
+						aria-label="Toggle theme" onclick="toggleDark()">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+							stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+							class="h-4 w-4 hidden dark:block">
+							<circle cx="12" cy="12" r="4"></circle>
+							<path d="M12 2v2"></path>
+							<path d="M12 20v2"></path>
+							<path d="m4.93 4.93 1.41 1.41"></path>
+							<path d="m17.66 17.66 1.41 1.41"></path>
+							<path d="M2 12h2"></path>
+							<path d="M20 12h2"></path>
+							<path d="m6.34 17.66-1.41 1.41"></path>
+							<path d="m19.07 4.93-1.41 1.41"></path>
+						</svg>
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+							stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+							class="h-4 w-4 dark:hidden block">
+							<path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+						</svg>
+					</button>
+				</header>
+				<nav class="mt-4">
+					<ul>
+						<li class="mb-2">
+							<a class="flex items-center py-2 px-4 hover:bg-gray-300 dark:hover:bg-gray-700" href="#">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+									fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+									stroke-linejoin="round" class="h-6 w-6">
+									<path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+									<polyline points="9 22 9 12 15 12 15 22"></polyline>
+								</svg>
+								<span class="ml-2">Home</span>
+							</a>
+						</li>
+						<li class="mb-2">
+							<a class="flex items-center py-2 px-4 hover:bg-gray-300 dark:hover:bg-gray-700" href="#">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+									fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+									stroke-linejoin="round" class="h-6 w-6">
+									<path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+									<circle cx="12" cy="7" r="4"></circle>
+								</svg>
+								<span class="ml-2">Profile</span>
+							</a>
+						</li>
+						<li class="mb-2">
+							<a class="flex items-center py-2 px-4 hover:bg-gray-300 dark:hover:bg-gray-700" href="#">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+									fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+									stroke-linejoin="round" class="h-6 w-6">
+									<path
+										d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z">
+									</path>
+									<circle cx="12" cy="12" r="3"></circle>
+								</svg>
+								<span class="ml-2">Settings</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</aside>
+		<!-- end of Sidebar -->
 
-      <!-- <Pricing1 /> -->
-      <!-- <Hero1 /> -->
-      <!-- <Hero2 /> -->
-    </main>
-  </div>
-  <script src="./script.js"></script>
+		<main class="relative md:ml-48">
+			<!-- Navbar1 -->
+			<nav
+				class="sm:flex sm:flex-row sm:items-center md:h-14 px-4 border-b-[1px] gap-4 md:gap-6 text-black dark:text-white bg-white dark:bg-gray-900 border-gray-300 dark:border-gray-600">
+				<div class="sm:flex sm:items-center sm:space-x-2 lg:space-x-4">
+					<a class="flex items-center space-x-2 text-lg font-bold" href="#">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+							stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+							class="h-6 w-6">
+							<path d="m7.5 4.27 9 5.15" />
+							<path
+								d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z" />
+							<path d="m3.3 7 8.7 5 8.7-5" />
+							<path d="M12 22V12" />
+						</svg>
+						<svg width="64" height="32" viewBox="0 0 64 32" fill="currentColor"
+							xmlns="http://www.w3.org/2000/svg" class="block" width=64 height=32>
+							<text x="32" y="16" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif"
+								font-weight="bold" font-size="16">
+								Karabon
+							</text>
+							<text dominant-baseline="middle" font-family="sans-serif" font-size="6" font-weight="bold"
+								text-anchor="start" x="55" y="9">
+								TM
+							</text>
+						</svg>
+					</a>
+				</div>
+				<div class="ml-auto sm:flex sm:items-center sm:space-x-4 text-center sm:text-left mb-5 sm:mb-0">
+					<a class="text-sm font-medium hover:underline" href="#">
+						Documentation
+					</a>
+					<div class="relative">
+						<button class="text-sm font-medium hover:underline" onclick="toggleElement('toggle-target-1')">
+							Pricing
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+								stroke="currentColor" class="inline-block" height=10 width=10>
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									d="M19 9l-7 7-7-7"></path>
+							</svg>
+						</button>
+						<div class="sm:absolute sm:min-w-48 sm:top-[100%] sm:right-0 text-black dark:text-white sm:bg-white sm:dark:bg-gray-900 sm:border-gray-300 sm:dark:border-gray-600 sm:border-[1px] px-4 py-3 sm:rounded sm:hidden"
+							id="toggle-target-1" onmouseenter="timeoutMouseEnter(event)"
+							onmouseleave="timeoutMouseLeave(event)">
+							<a class="text-sm font-medium hover:underline block sm:border-b-[1px] border-gray-300 dark:border-gray-600 mb-2 pb-1"
+								href="#">
+								Basic
+							</a>
+							<a class="text-sm font-medium hover:underline block sm:border-b-[1px] border-gray-300 dark:border-gray-600 mb-2 pb-1"
+								href="#">
+								Pro
+							</a>
+							<a class="text-sm font-medium hover:underline block" href="#">
+								Enterprise
+							</a>
+						</div>
+					</div>
+					<a class="text-sm font-medium hover:underline" href="#">
+						Contact Sales
+					</a>
+					<div class="relative">
+						<button
+							class="inline-flex h-8 w-8 rounded-full border border-gray-200 items-center justify-center overflow-hidden ring-gray-900/40 dark:ring-gray-50/40 hover:ring-[1px]"
+							onclick="toggleElement('toggle-target-2')">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+								stroke="currentColor" class="rounded-full" height=16 width=16>
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									d="M19 9l-7 7-7-7"></path>
+							</svg>
+							<!-- <img alt="Avatar" class="rounded-full" height={16} width={16} src="/placeholder.svg"} -->
+							<span class="sr-only">
+								Toggle navigation menu
+							</span>
+						</button>
+						<div class="sm:absolute sm:min-w-48 sm:top-[100%] sm:right-0 text-black dark:text-white sm:bg-white sm:dark:bg-gray-900 sm:border-gray-300 sm:dark:border-gray-600 sm:border-[1px] px-5 py-3 sm:rounded text-center sm:hidden"
+							id="toggle-target-2" onmouseenter="timeoutMouseEnter(event)"
+							onmouseleave="timeoutMouseLeave(event)">
+							<a class="text-sm font-medium hover:underline block mb-2" href="#">
+								user@email.com
+							</a>
+							<a class="inline-flex h-12 w-12 rounded-full border border-gray-200 items-center justify-center overflow-hidden ring-gray-900/40 dark:ring-gray-50/40 hover:ring-[1px] mb-2"
+								href="#">
+								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+									stroke="currentColor" class="rounded-full mx-auto" height=32 width=32>
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+										d="M19 9l-7 7-7-7"></path>
+								</svg>
+								<!-- <img alt="Avatar" class="rounded-full mx-auto" height={32} width={32} src="/placeholder.svg"/> -->
+							</a>
+							<a class="text-sm font-medium hover:underline block mb-2" href="#">
+								Username
+							</a>
+							<a class="text-sm font-medium hover:underline block mb-2" href="#">
+								action button
+							</a>
+							<a class="text-sm font-medium hover:underline block" href="#">
+								an other action button
+							</a>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<!-- end of Navbar1 -->
+
+			<!-- SignInUp1 -->
+			<div
+				class="w-full min-h-screen flex flex-col items-center justify-center pt-20 pb-20 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 dark:from-gray-700 dark:via-gray-800 dark:to-gray-900 shadow-2xl dark:text-white text-black">
+				<!-- SignIn1 -->
+				<div
+					class="w-full max-w-md bg-white dark:bg-gray-800 shadow-md sm:rounded-lg px-8 pt-6 pb-8 mb-4 border-solid border-[1px] border-gray-200 dark:border-gray-700 mx-auto">
+					<div class="mb-4 flex items-center justify-center">
+						<svg width="64" height="32" viewBox="0 0 64 32" fill="currentColor"
+							xmlns="http://www.w3.org/2000/svg">
+							<text x="32" y="16" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif"
+								font-weight="bold" font-size="16" class="mr-2 block" width=64 height=32>
+								Karabon
+							</text>
+							<text dominant-baseline="middle" font-family="sans-serif" font-size="6" font-weight="bold"
+								text-anchor="start" x="55" y="9">
+								TM
+							</text>
+						</svg>
+						<h1 class="text-2xl font-bold text-center ml-2">Login</h1>
+					</div>
+					<form class="space-y-4">
+						<div class="mb-4">
+							<label
+								class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+								for="signin1-username">
+								Username
+							</label>
+							<input
+								class="flex h-10 border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none dark:text-white dark:bg-gray-600 dark:ring-gray-600"
+								id="signin1-username" placeholder="Username" type="text" />
+							<p class="text-xs font-medium leading-none text-red-500 mt-1">
+								Error message goes here
+							</p>
+						</div>
+						<div class="mb-4">
+							<label
+								class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+								for="signin1-password">
+								Password
+							</label>
+							<input
+								class="flex h-10 border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none dark:text-white dark:bg-gray-600 dark:ring-gray-600"
+								id="signin1-password" placeholder="*********" type="password" />
+							<p class="text-xs font-medium leading-none text-red-500 mt-1">
+								Error message goes here
+							</p>
+						</div>
+						<div class="sm:flex items-center justify-between">
+							<div class="flex items-center">
+								<button type="button" role="checkbox" aria-checked="unchecked" data-state="unchecked"
+									value="on"
+									class="peer h-4 w-4 shrink-0 rounded-sm border border-primary ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground"
+									onclick="dataStateBtnClick(event, 'signin1-remember')" id="data-state-button-1">
+									<span data-state="unchecked"
+										class="items-center justify-center text-current data-[state=checked]:block hidden"
+										style="pointer-events: none" id="data-state-span-1">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+											viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+											stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
+											<polyline points="20 6 9 17 4 12"></polyline>
+										</svg>
+									</span>
+								</button>
+								<input aria-hidden="true" tabIndex={-1} id="signin1-remember" type="checkbox" value="on"
+									onchange="dataStateCheckToggle(event,'data-state-button-1', 'data-state-span-1' )"
+									style="transform: translateX(-100%);position: absolute;pointer-events: none;opacity: 0;margin: 0px;" />
+								<label
+									class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 ml-2"
+									for="signin1-remember">
+									Remember Me
+								</label>
+							</div>
+							<a class="text-sm text-gray-700 underline dark:text-gray-200 sm:inline-block block sm:mt-0 mt-4"
+								href="#">
+								Forgot Password?
+							</a>
+						</div>
+						<div class="mt-6">
+							<label
+								class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+								for="signin1-captcha">
+								Captcha
+							</label>
+							<input
+								class="flex h-10 border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none dark:text-white dark:bg-gray-600 dark:ring-gray-600"
+								id="signin1-captcha" placeholder="Enter Captcha" type="text" />
+							<p class="text-xs font-medium leading-none text-red-500 mt-1">
+								Error message goes here
+							</p>
+						</div>
+						<div class="mt-6">
+							<button
+								class="inline-flex items-center justify-center whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 w-full py-2 px-4 text-center bg-gray-800 rounded-md text-white text-sm hover:bg-gray-700 focus:outline-none dark:bg-gray-600 dark:text-white dark:hover:bg-gray-500"
+								type="submit">
+								Login
+							</button>
+						</div>
+						<div class="mt-6">
+							<button
+								class="inline-flex items-center justify-center whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 w-full py-2 px-4 text-center bg-blue-600 rounded-md text-white text-sm hover:bg-blue-500 focus:outline-none"
+								type="button">
+								Login with Google
+							</button>
+						</div>
+						<div class="mt-6">
+							<button
+								class="inline-flex items-center justify-center whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 w-full py-2 px-4 text-center bg-blue-800 rounded-md text-white text-sm hover:bg-blue-700 focus:outline-none"
+								type="button">
+								Login with Facebook
+							</button>
+						</div>
+					</form>
+				</div>
+				<!-- end of SignIn1 -->
+
+				<!-- SignUp1 -->
+				<div
+					class="w-full max-w-md bg-white dark:bg-gray-800 shadow-md sm:rounded-lg px-8 pt-6 pb-8 mb-4 mt-8 border-solid border-[1px] border-gray-200 dark:border-gray-700 mx-auto">
+					<div class="mb-4 flex items-center justify-center">
+						<svg width="64" height="32" viewBox="0 0 64 32" fill="currentColor"
+							xmlns="http://www.w3.org/2000/svg">
+							<text x="32" y="16" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif"
+								font-weight="bold" font-size="16" class="mr-2 block" width=64 height=32>
+								Karabon
+							</text>
+							<text dominant-baseline="middle" font-family="sans-serif" font-size="6" font-weight="bold"
+								text-anchor="start" x="55" y="9">
+								TM
+							</text>
+						</svg>
+						<h1 class="text-2xl font-bold text-center ml-2">Sign Up</h1>
+					</div>
+					<form class="space-y-4">
+						<div class="mb-4">
+							<label
+								class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+								for="signup1-username">
+								Username
+							</label>
+							<input
+								class="flex h-10 border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none dark:text-white dark:bg-gray-600 dark:ring-gray-600"
+								id="signup1-username" placeholder="Username" type="text" />
+							<p class="text-xs font-medium leading-none text-red-500 mt-1">
+								Error message goes here
+							</p>
+						</div>
+						<div class="mb-4">
+							<label
+								class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+								for="signup1-email">
+								Email
+							</label>
+							<input
+								class="flex h-10 border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none dark:text-white dark:bg-gray-600 dark:ring-gray-600"
+								id="signup1-email" placeholder="Email" type="email" />
+							<p class="text-xs font-medium leading-none text-red-500 mt-1">
+								Error message goes here
+							</p>
+						</div>
+						<div class="mb-4">
+							<label
+								class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+								for="signup1-password">
+								Password
+							</label>
+							<input
+								class="flex h-10 border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none dark:text-white dark:bg-gray-600 dark:ring-gray-600"
+								id="signup1-password" placeholder="*********" type="password" />
+							<p class="text-xs font-medium leading-none text-red-500 mt-1">
+								Error message goes here
+							</p>
+						</div>
+						<div class="mb-4">
+							<label
+								class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+								for="signup1-confirm-password">
+								Confirm Password
+							</label>
+							<input
+								class="flex h-10 border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none dark:text-white dark:bg-gray-600 dark:ring-gray-600"
+								id="signup1-confirm-password" placeholder="*********" type="password" />
+							<p class="text-xs font-medium leading-none text-red-500 mt-1">
+								Error message goes here
+							</p>
+						</div>
+						<div class="mt-6">
+							<label
+								class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+								for="signup1-captcha">
+								Captcha
+							</label>
+							<input
+								class="flex h-10 border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none dark:text-white dark:bg-gray-600 dark:ring-gray-600"
+								id="signup1-captcha" placeholder="Enter Captcha" type="text" />
+							<p class="text-xs font-medium leading-none text-red-500 mt-1">
+								Error message goes here
+							</p>
+						</div>
+						<div class="mt-6">
+							<button
+								class="inline-flex items-center justify-center whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 w-full py-2 px-4 text-center bg-gray-800 rounded-md text-white text-sm hover:bg-gray-700 focus:outline-none dark:bg-gray-600 dark:text-white dark:hover:bg-gray-500"
+								type="submit">
+								Sign Up
+							</button>
+						</div>
+						<div class="mt-6">
+							<button
+								class="inline-flex items-center justify-center whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 w-full py-2 px-4 text-center bg-blue-600 rounded-md text-white text-sm hover:bg-blue-500 focus:outline-none"
+								type="button">
+								Sign Up with Google
+							</button>
+						</div>
+						<div class="mt-6">
+							<button
+								class="inline-flex items-center justify-center whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 w-full py-2 px-4 text-center bg-blue-800 rounded-md text-white text-sm hover:bg-blue-700 focus:outline-none"
+								type="button">
+								Sign Up with Facebook
+							</button>
+						</div>
+					</form>
+				</div>
+				<!-- end of SignUp1 -->
+
+			</div>
+			<!-- end of SignInUp1 -->
+
+			<!-- Pricing1 -->
+			<section
+				class="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 dark:from-gray-700 dark:via-gray-800 dark:to-gray-900">
+				<div class="container px-4 text-center md:px-6 lg:gap-10 dark:text-white mx-auto">
+					<div
+						class="space-y-3 bg-white dark:bg-gray-800 shadow-md sm:rounded-lg px-8 pt-6 pb-8 mb-4 border-solid border-[1px] border-gray-200 dark:border-gray-700">
+						<h2 class="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl">
+							Choose the perfect plan for your team
+						</h2>
+						<p class="mx-auto md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+							All plans include unlimited projects and team
+							members. 14-day trial on all plans.
+						</p>
+					</div>
+					<div class="flex mx-auto justify-center items-center gap-4 lg:gap-6 flex-wrap">
+						<div
+							class="flex-1 sm:flex-none flex flex-col items-center gap-1 md:gap-2 lg:grid place-items-center/only-child bg-white dark:bg-gray-800 shadow-md sm:rounded-lg px-2 md:px-8 pt-3 md:pt-6 pb-4 md:pb-8 mb-4 dark:text-white border-solid border-[1px] border-gray-200 dark:border-gray-700">
+							<div class="flex items-center gap-2 justify-center">
+								<span class="text-blue-200 dark:text-blue-100">
+									<svg xmlns="http://www.w3.org/2000/svg" stroke="currentColor"
+										viewBox="0 0 59.998 59.998" version="1.1" xmlSpace="preserve" class="h-4 w-4">
+										<g>
+											<path
+												d="M59.206,0.293c-0.391-0.391-1.023-0.391-1.414,0L54.085,4H30.802L1.532,33.511c-0.666,0.666-1.033,1.553-1.033,2.495   s0.367,1.829,1.033,2.495l20.466,20.466c0.687,0.687,1.588,1.031,2.491,1.031c0.907,0,1.814-0.347,2.509-1.041l28.501-29.271V5.414   l3.707-3.707C59.597,1.316,59.597,0.684,59.206,0.293z M53.499,28.874L25.574,57.553c-0.596,0.596-1.566,0.596-2.162,0   L2.946,37.087c-0.596-0.596-0.596-1.566,0.003-2.165L31.636,6h20.449l-4.833,4.833C46.461,10.309,45.516,10,44.499,10   c-2.757,0-5,2.243-5,5s2.243,5,5,5s5-2.243,5-5c0-1.017-0.309-1.962-0.833-2.753l4.833-4.833V28.874z M47.499,15   c0,1.654-1.346,3-3,3s-3-1.346-3-3s1.346-3,3-3c0.462,0,0.894,0.114,1.285,0.301l-1.992,1.992c-0.391,0.391-0.391,1.023,0,1.414   C43.987,15.902,44.243,16,44.499,16s0.512-0.098,0.707-0.293l1.992-1.992C47.386,14.106,47.499,14.538,47.499,15z" />
+											<path
+												d="M42.246,31.281L31.64,41.888c-0.391,0.391-0.391,1.023,0,1.414c0.195,0.195,0.451,0.293,0.707,0.293   s0.512-0.098,0.707-0.293L43.66,32.695c0.391-0.391,0.391-1.023,0-1.414S42.637,30.891,42.246,31.281z" />
+											<path
+												d="M45.779,27.74c-0.181,0.189-0.29,0.449-0.29,0.71c0,0.27,0.109,0.529,0.29,0.71c0.189,0.189,0.449,0.29,0.71,0.29   c0.26,0,0.52-0.101,0.699-0.29c0.19-0.181,0.301-0.44,0.301-0.71c0-0.261-0.11-0.521-0.301-0.71   C46.818,27.37,46.159,27.37,45.779,27.74z" />
+											<path
+												d="M37.296,19.26c0.391-0.391,0.391-1.023,0-1.414c-0.391-0.391-1.023-0.391-1.414,0L25.275,28.453   c-0.391,0.391-0.391,1.023,0,1.414c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293L37.296,19.26z" />
+											<path
+												d="M33.761,31.281c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l7.071-7.071c0.391-0.391,0.391-1.023,0-1.414   s-1.023-0.391-1.414,0l-7.071,7.071C33.37,30.258,33.37,30.891,33.761,31.281z" />
+											<path
+												d="M28.104,35.523l-1.414,1.414c-0.391,0.391-0.391,1.023,0,1.414c0.195,0.195,0.451,0.293,0.707,0.293   s0.512-0.098,0.707-0.293l1.414-1.414c0.391-0.391,0.391-1.023,0-1.414S28.494,35.133,28.104,35.523z" />
+											<path
+												d="M17.497,28.745c0.256,0,0.512-0.098,0.707-0.293l10.606-10.606c0.391-0.391,0.391-1.023,0-1.414s-1.023-0.391-1.414,0   L16.79,27.038c-0.391,0.391-0.391,1.023,0,1.414C16.985,28.647,17.241,28.745,17.497,28.745z" />
+											<path
+												d="M31.639,14.6c0.26,0,0.521-0.1,0.71-0.29c0.181-0.189,0.29-0.439,0.29-0.71c0-0.26-0.109-0.52-0.3-0.71   c-0.37-0.37-1.03-0.37-1.41,0.01c-0.18,0.181-0.29,0.44-0.29,0.7s0.11,0.521,0.29,0.71C31.119,14.5,31.379,14.6,31.639,14.6z" />
+											<path
+												d="M22.449,31.28c-0.19,0.189-0.29,0.439-0.29,0.71c0,0.27,0.1,0.52,0.29,0.699c0.18,0.19,0.439,0.301,0.71,0.301   c0.26,0,0.52-0.11,0.699-0.29c0.19-0.19,0.301-0.45,0.301-0.71c0-0.261-0.11-0.521-0.301-0.71   C23.489,30.91,22.818,30.91,22.449,31.28z" />
+											<path
+												d="M32.349,34.109c0.181-0.18,0.29-0.439,0.29-0.71c0-0.26-0.109-0.52-0.29-0.71c-0.38-0.37-1.04-0.37-1.42,0   c-0.18,0.19-0.29,0.45-0.29,0.71c0,0.271,0.11,0.521,0.29,0.71c0.19,0.19,0.45,0.29,0.71,0.29S32.159,34.3,32.349,34.109z" />
+											<path
+												d="M24.651,47.627c0.615-0.929,0.909-2.041,0.814-3.172c-0.078-0.944-0.533-1.797-1.28-2.403   c-0.765-0.619-1.769-0.903-2.738-0.781l-2.802,0.35l-3.846-3.846c1.114-0.529,2.485-0.344,3.406,0.577   c0.391,0.391,1.023,0.391,1.414,0s0.391-1.023,0-1.414c-1.707-1.707-4.352-1.918-6.293-0.635l-0.779-0.779   c-0.391-0.391-1.023-0.391-1.414,0s-0.391,1.023,0,1.414l0.781,0.781c-0.614,0.928-0.908,2.041-0.813,3.172   c0.078,0.943,0.533,1.797,1.279,2.402c0.765,0.619,1.763,0.904,2.739,0.783l2.802-0.35l3.836,3.836   c-1.111,0.501-2.51,0.318-3.396-0.568c-0.391-0.391-1.023-0.391-1.414,0c-0.391,0.39-0.391,1.023,0,1.414   c0.943,0.944,2.199,1.465,3.535,1.465c0.996,0,1.946-0.291,2.757-0.829l0.622,0.622c0.195,0.195,0.451,0.293,0.707,0.293   s0.512-0.098,0.707-0.293c0.391-0.391,0.391-1.023,0-1.414L24.651,47.627z M14.871,42.092c-0.438,0.054-0.889-0.072-1.231-0.352   c-0.319-0.26-0.514-0.62-0.547-1.016c-0.044-0.536,0.07-1.059,0.295-1.532l2.742,2.742L14.871,42.092z M21.695,43.255   c0.433-0.059,0.886,0.072,1.229,0.351c0.32,0.26,0.515,0.62,0.548,1.016c0.044,0.536-0.07,1.059-0.296,1.532l-2.741-2.741   L21.695,43.255z" />
+
+										</g>
+										<g />
+									</svg>
+								</span>
+								<h3 class="text-xl font-bold tracking-tight">
+									Starter
+								</h3>
+							</div>
+							<p class="text-sm text-gray-500 dark:text-gray-400">
+								Starts at
+							</p>
+							<p class="text-2xl font-extrabold" id="rz2ilmg6br9">
+								$19/mo
+							</p>
+							<p class="text-sm text-gray-500 dark:text-gray-400">
+								billed at
+								<span class="line-through">$600</span>
+								$500/yr
+							</p>
+							<ul class="gridtext-sm gap-2 md:text-base sm:text-left text-center">
+								<li class="sm:flex items-center sm:gap-2">
+									<svg
+										fill="none"
+										stroke="currentColor"
+										viewBox="0 0 24 24"
+										xmlns="http://www.w3.org/2000/svg"
+										class="h-4 w-4 hidden sm:inline-block"
+									>
+										<path
+											d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="2"
+										/>
+									</svg>
+									Unlimited projects
+								</li>
+								<li class="sm:flex items-center gap-2">
+									<svg
+										fill="none"
+										stroke="currentColor"
+										viewBox="0 0 24 24"
+										xmlns="http://www.w3.org/2000/svg"
+										class="h-4 w-4 hidden sm:inline-block"
+									>
+										<path
+											d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="2"
+										/>
+									</svg>
+									Unlimited team members
+								</li>
+								<li class="sm:flex items-center gap-2" id="zvek7l8ocxd">
+									<svg
+										fill="none"
+										stroke="currentColor"
+										viewBox="0 0 24 24"
+										xmlns="http://www.w3.org/2000/svg"
+										class="h-4 w-4 hidden sm:inline-block"
+									>
+										<path
+											d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="2"
+										/>
+									</svg>
+									Unlimited team members
+								</li>
+								<li class="sm:flex items-center gap-2" id="zvek7l8ocxd">
+									<svg
+										fill="none"
+										stroke="currentColor"
+										viewBox="0 0 24 24"
+										xmlns="http://www.w3.org/2000/svg"
+										class="h-4 w-4 hidden sm:inline-block"
+									>
+										<path
+											d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="2"
+										/>
+									</svg>
+									Unlimited team members
+								</li>
+								<li class="sm:flex items-center gap-2">
+									<svg
+										fill="none"
+										stroke="currentColor"
+										viewBox="0 0 24 24"
+										xmlns="http://www.w3.org/2000/svg"
+										class="h-4 w-4 hidden sm:inline-block"
+									>
+										<path
+											d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="2"
+										/>
+									</svg>
+									Basic analytics
+								</li>
+								<li>
+									<ul
+										class="flex flex-col sm:flex-row gap-1 p-2 font-sans text-base font-normal text-blue-gray-700">
+										<li role="button"
+											class="flex items-center w-full p-0 leading-tight transition-all rounded-lg outline-none text-start hover:bg-blue-gray-50 hover:bg-opacity-80 hover:text-blue-gray-900 focus:bg-blue-gray-50 focus:bg-opacity-80 focus:text-blue-gray-900 active:bg-blue-gray-50 active:bg-opacity-80 active:text-blue-gray-900">
+											<label for="horizontal-list-react-1"
+												class="flex items-center w-full px-3 py-2 cursor-pointer">
+												<div class="grid mr-3 place-items-center">
+													<div class="inline-flex items-center">
+														<div
+															class="relative flex items-center p-0 rounded-full cursor-pointer">
+															<input name="horizontal-list-1" id="horizontal-list-react-1"
+																type="radio"
+																class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-gray-200 text-gray-900 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-gray-900 checked:before:bg-gray-900 hover:before:opacity-0" />
+															<span
+																class="absolute text-gray-900 transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	viewBox="0 0 16 16" fill="currentColor"
+																	class="h-3.5 w-3.5">
+																	<circle data-name="ellipse" cx="8" cy="8" r="8">
+																	</circle>
+																</svg>
+															</span>
+														</div>
+													</div>
+												</div>
+												<p
+													class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-400">
+													Monthly
+												</p>
+											</label>
+										</li>
+										<li role="button"
+											class="flex items-center w-full p-0 leading-tight transition-all rounded-lg outline-none text-start hover:bg-blue-gray-50 hover:bg-opacity-80 hover:text-blue-gray-900 focus:bg-blue-gray-50 focus:bg-opacity-80 focus:text-blue-gray-900 active:bg-blue-gray-50 active:bg-opacity-80 active:text-blue-gray-900">
+											<label for="horizontal-list-vue-1"
+												class="flex items-center w-full px-3 py-2 cursor-pointer">
+												<div class="grid mr-3 place-items-center">
+													<div class="inline-flex items-center">
+														<div
+															class="relative flex items-center p-0 rounded-full cursor-pointer">
+															<input name="horizontal-list-1" id="horizontal-list-vue-1"
+																type="radio"
+																class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-gray-200 text-gray-900 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-gray-900 checked:before:bg-gray-900 hover:before:opacity-0" />
+															<span
+																class="absolute text-gray-900 transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	viewBox="0 0 16 16" fill="currentColor"
+																	class="h-3.5 w-3.5">
+																	<circle data-name="ellipse" cx="8" cy="8" r="8">
+																	</circle>
+																</svg>
+															</span>
+														</div>
+													</div>
+												</div>
+												<p
+													class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-400">
+													Yearly
+												</p>
+											</label>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<button
+								class="inline-flex items-center justify-center whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 py-2 px-4 text-center bg-gray-800 rounded-md text-white text-sm hover:bg-gray-700 focus:outline-none dark:bg-gray-600 dark:text-white dark:hover:bg-gray-500 w-full"
+								type="submit">
+								Subscribe
+							</button>
+						</div>
+						<div
+							class="flex-1 sm:flex-none flex flex-col items-center gap-1 md:gap-2 lg:grid place-items-center/only-child bg-white dark:bg-gray-800 shadow-md sm:rounded-lg px-2 md:px-8 pt-3 md:pt-6 pb-4 md:pb-8 mb-4 dark:text-white border-solid border-[1px] border-gray-200 dark:border-gray-700">
+							<div class="flex items-center gap-2 justify-center">
+								<span class="text-blue-600 dark:text-blue-300">
+									<svg xmlns="http://www.w3.org/2000/svg" stroke="currentColor"
+										viewBox="0 0 59.998 59.998" version="1.1" xmlSpace="preserve" class="h-4 w-4">
+										<g>
+											<path
+												d="M59.206,0.293c-0.391-0.391-1.023-0.391-1.414,0L54.085,4H30.802L1.532,33.511c-0.666,0.666-1.033,1.553-1.033,2.495   s0.367,1.829,1.033,2.495l20.466,20.466c0.687,0.687,1.588,1.031,2.491,1.031c0.907,0,1.814-0.347,2.509-1.041l28.501-29.271V5.414   l3.707-3.707C59.597,1.316,59.597,0.684,59.206,0.293z M53.499,28.874L25.574,57.553c-0.596,0.596-1.566,0.596-2.162,0   L2.946,37.087c-0.596-0.596-0.596-1.566,0.003-2.165L31.636,6h20.449l-4.833,4.833C46.461,10.309,45.516,10,44.499,10   c-2.757,0-5,2.243-5,5s2.243,5,5,5s5-2.243,5-5c0-1.017-0.309-1.962-0.833-2.753l4.833-4.833V28.874z M47.499,15   c0,1.654-1.346,3-3,3s-3-1.346-3-3s1.346-3,3-3c0.462,0,0.894,0.114,1.285,0.301l-1.992,1.992c-0.391,0.391-0.391,1.023,0,1.414   C43.987,15.902,44.243,16,44.499,16s0.512-0.098,0.707-0.293l1.992-1.992C47.386,14.106,47.499,14.538,47.499,15z" />
+											<path
+												d="M42.246,31.281L31.64,41.888c-0.391,0.391-0.391,1.023,0,1.414c0.195,0.195,0.451,0.293,0.707,0.293   s0.512-0.098,0.707-0.293L43.66,32.695c0.391-0.391,0.391-1.023,0-1.414S42.637,30.891,42.246,31.281z" />
+											<path
+												d="M45.779,27.74c-0.181,0.189-0.29,0.449-0.29,0.71c0,0.27,0.109,0.529,0.29,0.71c0.189,0.189,0.449,0.29,0.71,0.29   c0.26,0,0.52-0.101,0.699-0.29c0.19-0.181,0.301-0.44,0.301-0.71c0-0.261-0.11-0.521-0.301-0.71   C46.818,27.37,46.159,27.37,45.779,27.74z" />
+											<path
+												d="M37.296,19.26c0.391-0.391,0.391-1.023,0-1.414c-0.391-0.391-1.023-0.391-1.414,0L25.275,28.453   c-0.391,0.391-0.391,1.023,0,1.414c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293L37.296,19.26z" />
+											<path
+												d="M33.761,31.281c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l7.071-7.071c0.391-0.391,0.391-1.023,0-1.414   s-1.023-0.391-1.414,0l-7.071,7.071C33.37,30.258,33.37,30.891,33.761,31.281z" />
+											<path
+												d="M28.104,35.523l-1.414,1.414c-0.391,0.391-0.391,1.023,0,1.414c0.195,0.195,0.451,0.293,0.707,0.293   s0.512-0.098,0.707-0.293l1.414-1.414c0.391-0.391,0.391-1.023,0-1.414S28.494,35.133,28.104,35.523z" />
+											<path
+												d="M17.497,28.745c0.256,0,0.512-0.098,0.707-0.293l10.606-10.606c0.391-0.391,0.391-1.023,0-1.414s-1.023-0.391-1.414,0   L16.79,27.038c-0.391,0.391-0.391,1.023,0,1.414C16.985,28.647,17.241,28.745,17.497,28.745z" />
+											<path
+												d="M31.639,14.6c0.26,0,0.521-0.1,0.71-0.29c0.181-0.189,0.29-0.439,0.29-0.71c0-0.26-0.109-0.52-0.3-0.71   c-0.37-0.37-1.03-0.37-1.41,0.01c-0.18,0.181-0.29,0.44-0.29,0.7s0.11,0.521,0.29,0.71C31.119,14.5,31.379,14.6,31.639,14.6z" />
+											<path
+												d="M22.449,31.28c-0.19,0.189-0.29,0.439-0.29,0.71c0,0.27,0.1,0.52,0.29,0.699c0.18,0.19,0.439,0.301,0.71,0.301   c0.26,0,0.52-0.11,0.699-0.29c0.19-0.19,0.301-0.45,0.301-0.71c0-0.261-0.11-0.521-0.301-0.71   C23.489,30.91,22.818,30.91,22.449,31.28z" />
+											<path
+												d="M32.349,34.109c0.181-0.18,0.29-0.439,0.29-0.71c0-0.26-0.109-0.52-0.29-0.71c-0.38-0.37-1.04-0.37-1.42,0   c-0.18,0.19-0.29,0.45-0.29,0.71c0,0.271,0.11,0.521,0.29,0.71c0.19,0.19,0.45,0.29,0.71,0.29S32.159,34.3,32.349,34.109z" />
+											<path
+												d="M24.651,47.627c0.615-0.929,0.909-2.041,0.814-3.172c-0.078-0.944-0.533-1.797-1.28-2.403   c-0.765-0.619-1.769-0.903-2.738-0.781l-2.802,0.35l-3.846-3.846c1.114-0.529,2.485-0.344,3.406,0.577   c0.391,0.391,1.023,0.391,1.414,0s0.391-1.023,0-1.414c-1.707-1.707-4.352-1.918-6.293-0.635l-0.779-0.779   c-0.391-0.391-1.023-0.391-1.414,0s-0.391,1.023,0,1.414l0.781,0.781c-0.614,0.928-0.908,2.041-0.813,3.172   c0.078,0.943,0.533,1.797,1.279,2.402c0.765,0.619,1.763,0.904,2.739,0.783l2.802-0.35l3.836,3.836   c-1.111,0.501-2.51,0.318-3.396-0.568c-0.391-0.391-1.023-0.391-1.414,0c-0.391,0.39-0.391,1.023,0,1.414   c0.943,0.944,2.199,1.465,3.535,1.465c0.996,0,1.946-0.291,2.757-0.829l0.622,0.622c0.195,0.195,0.451,0.293,0.707,0.293   s0.512-0.098,0.707-0.293c0.391-0.391,0.391-1.023,0-1.414L24.651,47.627z M14.871,42.092c-0.438,0.054-0.889-0.072-1.231-0.352   c-0.319-0.26-0.514-0.62-0.547-1.016c-0.044-0.536,0.07-1.059,0.295-1.532l2.742,2.742L14.871,42.092z M21.695,43.255   c0.433-0.059,0.886,0.072,1.229,0.351c0.32,0.26,0.515,0.62,0.548,1.016c0.044,0.536-0.07,1.059-0.296,1.532l-2.741-2.741   L21.695,43.255z" />
+										</g>
+										<g />
+									</svg>
+								</span>
+								<h3 class="text-xl font-bold tracking-tight">
+									Pro
+								</h3>
+							</div>
+							<p class="text-sm text-gray-500 dark:text-gray-400">
+								Starts at
+							</p>
+							<p class="text-2xl font-extrabold" id="rz2ilmg6br9">
+								$49/mo
+							</p>
+							<p class="text-sm text-gray-500 dark:text-gray-400">
+								billed at
+								<span class="line-through">$600</span>
+								$500/yr
+							</p>
+							<ul class="gridtext-sm gap-2 md:text-base sm:text-left text-center">
+								<li class="sm:flex items-center sm:gap-2">
+									<svg
+										fill="none"
+										stroke="currentColor"
+										viewBox="0 0 24 24"
+										xmlns="http://www.w3.org/2000/svg"
+										class="h-4 w-4 hidden sm:inline-block"
+									>
+										<path
+											d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="2"
+										/>
+									</svg>
+									Unlimited projects
+								</li>
+								<li class="sm:flex items-center gap-2">
+									<svg
+										fill="none"
+										stroke="currentColor"
+										viewBox="0 0 24 24"
+										xmlns="http://www.w3.org/2000/svg"
+										class="h-4 w-4 hidden sm:inline-block"
+									>
+										<path
+											d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="2"
+										/>
+									</svg>
+									Unlimited team members
+								</li>
+								<li class="sm:flex items-center gap-2" id="zvek7l8ocxd">
+									<svg
+										fill="none"
+										stroke="currentColor"
+										viewBox="0 0 24 24"
+										xmlns="http://www.w3.org/2000/svg"
+										class="h-4 w-4 hidden sm:inline-block"
+									>
+										<path
+											d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="2"
+										/>
+									</svg>
+									Unlimited team members
+								</li>
+								<li class="sm:flex items-center gap-2" id="zvek7l8ocxd">
+									<svg
+										fill="none"
+										stroke="currentColor"
+										viewBox="0 0 24 24"
+										xmlns="http://www.w3.org/2000/svg"
+										class="h-4 w-4 hidden sm:inline-block"
+									>
+										<path
+											d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="2"
+										/>
+									</svg>
+									Unlimited team members
+								</li>
+								<li class="sm:flex items-center gap-2">
+									<svg
+										fill="none"
+										stroke="currentColor"
+										viewBox="0 0 24 24"
+										xmlns="http://www.w3.org/2000/svg"
+										class="h-4 w-4 hidden sm:inline-block"
+									>
+										<path
+											d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="2"
+										/>
+									</svg>
+									Basic analytics
+								</li>
+								<li>
+									<ul
+										class="flex flex-col sm:flex-row gap-1 p-2 font-sans text-base font-normal text-blue-gray-700">
+										<li role="button"
+											class="flex items-center w-full p-0 leading-tight transition-all rounded-lg outline-none text-start hover:bg-blue-gray-50 hover:bg-opacity-80 hover:text-blue-gray-900 focus:bg-blue-gray-50 focus:bg-opacity-80 focus:text-blue-gray-900 active:bg-blue-gray-50 active:bg-opacity-80 active:text-blue-gray-900">
+											<label for="horizontal-list-react-2"
+												class="flex items-center w-full px-3 py-2 cursor-pointer">
+												<div class="grid mr-3 place-items-center">
+													<div class="inline-flex items-center">
+														<div
+															class="relative flex items-center p-0 rounded-full cursor-pointer">
+															<input name="horizontal-list-2" id="horizontal-list-react-2"
+																type="radio"
+																class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-gray-200 text-gray-900 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-gray-900 checked:before:bg-gray-900 hover:before:opacity-0" />
+															<span
+																class="absolute text-gray-900 transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	viewBox="0 0 16 16" fill="currentColor"
+																	class="h-3.5 w-3.5">
+																	<circle data-name="ellipse" cx="8" cy="8" r="8">
+																	</circle>
+																</svg>
+															</span>
+														</div>
+													</div>
+												</div>
+												<p
+													class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-400">
+													Monthly
+												</p>
+											</label>
+										</li>
+										<li role="button"
+											class="flex items-center w-full p-0 leading-tight transition-all rounded-lg outline-none text-start hover:bg-blue-gray-50 hover:bg-opacity-80 hover:text-blue-gray-900 focus:bg-blue-gray-50 focus:bg-opacity-80 focus:text-blue-gray-900 active:bg-blue-gray-50 active:bg-opacity-80 active:text-blue-gray-900">
+											<label for="horizontal-list-vue-2"
+												class="flex items-center w-full px-3 py-2 cursor-pointer">
+												<div class="grid mr-3 place-items-center">
+													<div class="inline-flex items-center">
+														<div
+															class="relative flex items-center p-0 rounded-full cursor-pointer">
+															<input name="horizontal-list-2" id="horizontal-list-vue-2"
+																type="radio"
+																class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-gray-200 text-gray-900 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-gray-900 checked:before:bg-gray-900 hover:before:opacity-0" />
+															<span
+																class="absolute text-gray-900 transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	viewBox="0 0 16 16" fill="currentColor"
+																	class="h-3.5 w-3.5">
+																	<circle data-name="ellipse" cx="8" cy="8" r="8">
+																	</circle>
+																</svg>
+															</span>
+														</div>
+													</div>
+												</div>
+												<p
+													class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-400">
+													Yearly
+												</p>
+											</label>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<button
+								class="inline-flex items-center justify-center whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 w-full py-2 px-4 text-center bg-blue-600 rounded-md text-white text-sm hover:bg-blue-500 focus:outline-none"
+								type="submit">
+								Subscribe
+							</button>
+						</div>
+						<div
+							class="flex-1 sm:flex-none flex flex-col items-center gap-1 md:gap-2 lg:grid place-items-center/only-child bg-white dark:bg-gray-800 shadow-md sm:rounded-lg px-2 md:px-8 pt-3 md:pt-6 pb-4 md:pb-8 mb-4 dark:text-white border-solid border-[1px] border-gray-200 dark:border-gray-700">
+							<div class="flex items-center gap-2 justify-center">
+								<span class="text-blue-700 dark:text-blue-400">
+									<svg xmlns="http://www.w3.org/2000/svg" stroke="currentColor"
+										viewBox="0 0 59.998 59.998" version="1.1" xmlSpace="preserve" class="h-4 w-4">
+										<g>
+											<path
+												d="M59.206,0.293c-0.391-0.391-1.023-0.391-1.414,0L54.085,4H30.802L1.532,33.511c-0.666,0.666-1.033,1.553-1.033,2.495   s0.367,1.829,1.033,2.495l20.466,20.466c0.687,0.687,1.588,1.031,2.491,1.031c0.907,0,1.814-0.347,2.509-1.041l28.501-29.271V5.414   l3.707-3.707C59.597,1.316,59.597,0.684,59.206,0.293z M53.499,28.874L25.574,57.553c-0.596,0.596-1.566,0.596-2.162,0   L2.946,37.087c-0.596-0.596-0.596-1.566,0.003-2.165L31.636,6h20.449l-4.833,4.833C46.461,10.309,45.516,10,44.499,10   c-2.757,0-5,2.243-5,5s2.243,5,5,5s5-2.243,5-5c0-1.017-0.309-1.962-0.833-2.753l4.833-4.833V28.874z M47.499,15   c0,1.654-1.346,3-3,3s-3-1.346-3-3s1.346-3,3-3c0.462,0,0.894,0.114,1.285,0.301l-1.992,1.992c-0.391,0.391-0.391,1.023,0,1.414   C43.987,15.902,44.243,16,44.499,16s0.512-0.098,0.707-0.293l1.992-1.992C47.386,14.106,47.499,14.538,47.499,15z" />
+											<path
+												d="M42.246,31.281L31.64,41.888c-0.391,0.391-0.391,1.023,0,1.414c0.195,0.195,0.451,0.293,0.707,0.293   s0.512-0.098,0.707-0.293L43.66,32.695c0.391-0.391,0.391-1.023,0-1.414S42.637,30.891,42.246,31.281z" />
+											<path
+												d="M45.779,27.74c-0.181,0.189-0.29,0.449-0.29,0.71c0,0.27,0.109,0.529,0.29,0.71c0.189,0.189,0.449,0.29,0.71,0.29   c0.26,0,0.52-0.101,0.699-0.29c0.19-0.181,0.301-0.44,0.301-0.71c0-0.261-0.11-0.521-0.301-0.71   C46.818,27.37,46.159,27.37,45.779,27.74z" />
+											<path
+												d="M37.296,19.26c0.391-0.391,0.391-1.023,0-1.414c-0.391-0.391-1.023-0.391-1.414,0L25.275,28.453   c-0.391,0.391-0.391,1.023,0,1.414c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293L37.296,19.26z" />
+											<path
+												d="M33.761,31.281c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l7.071-7.071c0.391-0.391,0.391-1.023,0-1.414   s-1.023-0.391-1.414,0l-7.071,7.071C33.37,30.258,33.37,30.891,33.761,31.281z" />
+											<path
+												d="M28.104,35.523l-1.414,1.414c-0.391,0.391-0.391,1.023,0,1.414c0.195,0.195,0.451,0.293,0.707,0.293   s0.512-0.098,0.707-0.293l1.414-1.414c0.391-0.391,0.391-1.023,0-1.414S28.494,35.133,28.104,35.523z" />
+											<path
+												d="M17.497,28.745c0.256,0,0.512-0.098,0.707-0.293l10.606-10.606c0.391-0.391,0.391-1.023,0-1.414s-1.023-0.391-1.414,0   L16.79,27.038c-0.391,0.391-0.391,1.023,0,1.414C16.985,28.647,17.241,28.745,17.497,28.745z" />
+											<path
+												d="M31.639,14.6c0.26,0,0.521-0.1,0.71-0.29c0.181-0.189,0.29-0.439,0.29-0.71c0-0.26-0.109-0.52-0.3-0.71   c-0.37-0.37-1.03-0.37-1.41,0.01c-0.18,0.181-0.29,0.44-0.29,0.7s0.11,0.521,0.29,0.71C31.119,14.5,31.379,14.6,31.639,14.6z" />
+											<path
+												d="M22.449,31.28c-0.19,0.189-0.29,0.439-0.29,0.71c0,0.27,0.1,0.52,0.29,0.699c0.18,0.19,0.439,0.301,0.71,0.301   c0.26,0,0.52-0.11,0.699-0.29c0.19-0.19,0.301-0.45,0.301-0.71c0-0.261-0.11-0.521-0.301-0.71   C23.489,30.91,22.818,30.91,22.449,31.28z" />
+											<path
+												d="M32.349,34.109c0.181-0.18,0.29-0.439,0.29-0.71c0-0.26-0.109-0.52-0.29-0.71c-0.38-0.37-1.04-0.37-1.42,0   c-0.18,0.19-0.29,0.45-0.29,0.71c0,0.271,0.11,0.521,0.29,0.71c0.19,0.19,0.45,0.29,0.71,0.29S32.159,34.3,32.349,34.109z" />
+											<path
+												d="M24.651,47.627c0.615-0.929,0.909-2.041,0.814-3.172c-0.078-0.944-0.533-1.797-1.28-2.403   c-0.765-0.619-1.769-0.903-2.738-0.781l-2.802,0.35l-3.846-3.846c1.114-0.529,2.485-0.344,3.406,0.577   c0.391,0.391,1.023,0.391,1.414,0s0.391-1.023,0-1.414c-1.707-1.707-4.352-1.918-6.293-0.635l-0.779-0.779   c-0.391-0.391-1.023-0.391-1.414,0s-0.391,1.023,0,1.414l0.781,0.781c-0.614,0.928-0.908,2.041-0.813,3.172   c0.078,0.943,0.533,1.797,1.279,2.402c0.765,0.619,1.763,0.904,2.739,0.783l2.802-0.35l3.836,3.836   c-1.111,0.501-2.51,0.318-3.396-0.568c-0.391-0.391-1.023-0.391-1.414,0c-0.391,0.39-0.391,1.023,0,1.414   c0.943,0.944,2.199,1.465,3.535,1.465c0.996,0,1.946-0.291,2.757-0.829l0.622,0.622c0.195,0.195,0.451,0.293,0.707,0.293   s0.512-0.098,0.707-0.293c0.391-0.391,0.391-1.023,0-1.414L24.651,47.627z M14.871,42.092c-0.438,0.054-0.889-0.072-1.231-0.352   c-0.319-0.26-0.514-0.62-0.547-1.016c-0.044-0.536,0.07-1.059,0.295-1.532l2.742,2.742L14.871,42.092z M21.695,43.255   c0.433-0.059,0.886,0.072,1.229,0.351c0.32,0.26,0.515,0.62,0.548,1.016c0.044,0.536-0.07,1.059-0.296,1.532l-2.741-2.741   L21.695,43.255z" />
+										</g>
+										<g />
+									</svg>
+								</span>
+								<h3 class="text-xl font-bold tracking-tight">
+									Enterprise
+								</h3>
+							</div>
+							<p class="text-sm text-gray-500 dark:text-gray-400">
+								Starts at
+							</p>
+							<p class="text-2xl font-extrabold" id="rz2ilmg6br9">
+								$99/mo
+							</p>
+							<p class="text-sm text-gray-500 dark:text-gray-400">
+								billed at
+								<span class="line-through">$600</span>
+								$500/yr
+							</p>
+							<ul class="gridtext-sm gap-2 md:text-base sm:text-left text-center">
+								<li class="sm:flex items-center sm:gap-2">
+									<svg
+										fill="none"
+										stroke="currentColor"
+										viewBox="0 0 24 24"
+										xmlns="http://www.w3.org/2000/svg"
+										class="h-4 w-4 hidden sm:inline-block"
+									>
+										<path
+											d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="2"
+										/>
+									</svg>
+									Unlimited projects
+								</li>
+								<li class="sm:flex items-center gap-2">
+									<svg
+										fill="none"
+										stroke="currentColor"
+										viewBox="0 0 24 24"
+										xmlns="http://www.w3.org/2000/svg"
+										class="h-4 w-4 hidden sm:inline-block"
+									>
+										<path
+											d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="2"
+										/>
+									</svg>
+									Unlimited team members
+								</li>
+								<li class="sm:flex items-center gap-2" id="zvek7l8ocxd">
+									<svg
+										fill="none"
+										stroke="currentColor"
+										viewBox="0 0 24 24"
+										xmlns="http://www.w3.org/2000/svg"
+										class="h-4 w-4 hidden sm:inline-block"
+									>
+										<path
+											d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="2"
+										/>
+									</svg>
+									Unlimited team members
+								</li>
+								<li class="sm:flex items-center gap-2" id="zvek7l8ocxd">
+									<svg
+										fill="none"
+										stroke="currentColor"
+										viewBox="0 0 24 24"
+										xmlns="http://www.w3.org/2000/svg"
+										class="h-4 w-4 hidden sm:inline-block"
+									>
+										<path
+											d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="2"
+										/>
+									</svg>
+									Unlimited team members
+								</li>
+								<li class="sm:flex items-center gap-2">
+									<svg
+										fill="none"
+										stroke="currentColor"
+										viewBox="0 0 24 24"
+										xmlns="http://www.w3.org/2000/svg"
+										class="h-4 w-4 hidden sm:inline-block"
+									>
+										<path
+											d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="2"
+										/>
+									</svg>
+									Basic analytics
+								</li>
+								<li>
+									<ul
+										class="flex flex-col sm:flex-row gap-1 p-2 font-sans text-base font-normal text-blue-gray-700">
+										<li role="button"
+											class="flex items-center w-full p-0 leading-tight transition-all rounded-lg outline-none text-start hover:bg-blue-gray-50 hover:bg-opacity-80 hover:text-blue-gray-900 focus:bg-blue-gray-50 focus:bg-opacity-80 focus:text-blue-gray-900 active:bg-blue-gray-50 active:bg-opacity-80 active:text-blue-gray-900">
+											<label for="horizontal-list-react-3"
+												class="flex items-center w-full px-3 py-2 cursor-pointer">
+												<div class="grid mr-3 place-items-center">
+													<div class="inline-flex items-center">
+														<div
+															class="relative flex items-center p-0 rounded-full cursor-pointer">
+															<input name="horizontal-list-3" id="horizontal-list-react-3"
+																type="radio"
+																class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-gray-200 text-gray-900 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-gray-900 checked:before:bg-gray-900 hover:before:opacity-0" />
+															<span
+																class="absolute text-gray-900 transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	viewBox="0 0 16 16" fill="currentColor"
+																	class="h-3.5 w-3.5">
+																	<circle data-name="ellipse" cx="8" cy="8" r="8">
+																	</circle>
+																</svg>
+															</span>
+														</div>
+													</div>
+												</div>
+												<p
+													class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-400">
+													Monthly
+												</p>
+											</label>
+										</li>
+										<li role="button"
+											class="flex items-center w-full p-0 leading-tight transition-all rounded-lg outline-none text-start hover:bg-blue-gray-50 hover:bg-opacity-80 hover:text-blue-gray-900 focus:bg-blue-gray-50 focus:bg-opacity-80 focus:text-blue-gray-900 active:bg-blue-gray-50 active:bg-opacity-80 active:text-blue-gray-900">
+											<label for="horizontal-list-vue-3"
+												class="flex items-center w-full px-3 py-2 cursor-pointer">
+												<div class="grid mr-3 place-items-center">
+													<div class="inline-flex items-center">
+														<div
+															class="relative flex items-center p-0 rounded-full cursor-pointer">
+															<input name="horizontal-list-3" id="horizontal-list-vue-3"
+																type="radio"
+																class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-gray-200 text-gray-900 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-gray-900 checked:before:bg-gray-900 hover:before:opacity-0" />
+															<span
+																class="absolute text-gray-900 transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	viewBox="0 0 16 16" fill="currentColor"
+																	class="h-3.5 w-3.5">
+																	<circle data-name="ellipse" cx="8" cy="8" r="8">
+																	</circle>
+																</svg>
+															</span>
+														</div>
+													</div>
+												</div>
+												<p
+													class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-400">
+													Yearly
+												</p>
+											</label>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<button
+								class="inline-flex items-center justify-center whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 w-full py-2 px-4 text-center bg-blue-800 rounded-md text-white text-sm hover:bg-blue-700 focus:outline-none"
+								type="submit">
+								Subscribe
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end of Pricing1 -->
+
+			<!-- Hero1 -->
+			<!-- <Hero1 /> -->
+			<!-- end of Hero1 -->
+
+			<!-- Hero2 -->
+			<!-- <Hero2 /> -->
+			<!-- end of Hero2 -->
+		</main>
+	</div>
+	<script src="./script.js"></script>
 </body>
 
 </html>
