@@ -6,10 +6,6 @@ on:
     push:
         branches:
           - main
-    # Set your workflow to run on pull request events that target the main branch
-    pull_request:
-        branches: 
-          - main
     # Allows you to run this workflow manually from the Actions tab
     workflow_dispatch:
 
