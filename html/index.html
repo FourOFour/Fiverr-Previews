@@ -10,13 +10,14 @@
 </head>
 
 <body>
-	<div id="top" class="w-full h-full">
+	<div id="top" class="w-full h-full dark:text-slate-50 text-slate-950">
 
 		<!-- Sidebar -->
 		<aside
-			class="md:left-0 md:block md:fixed md:top-0 md:bottom-0 md:overflow-y-auto md:overflow-hidden md:shadow-xl relative md:w-48 z-10 bg-white dark:bg-gray-900 md:border-r-[1px] md:border-gray-300 dark:border-gray-600">
-			<div class="flex flex-col dark:text-white">
-				<header class="p-4 flex justify-between relative">
+			class="md:left-0 md:block md:fixed md:top-0 md:bottom-0 md:overflow-y-auto md:overflow-hidden relative md:w-48 z-10 bg-slate-200 dark:bg-slate-800 md:border-r-[1px] md:border-slate-300 dark:border-slate-600">
+			<div class="flex flex-col dark:text-slate-50">
+				<header
+					class="md:h-14 p-4 flex justify-between relative sm:border-b-[1px] border-slate-300 dark:border-slate-600">
 					<h1 class="text-xl font-bold">My App</h1>
 					<button type="button" aria-pressed="false" data-state="off"
 						class="items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors hover:bg-muted hover:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=on]:bg-accent data-[state=on]:text-accent-foreground bg-transparent h-10 px-3 absolute right-2 top-2"
@@ -41,35 +42,47 @@
 						</svg>
 					</button>
 				</header>
-				<nav class="mt-4">
-					<ul>
-						<li class="mb-2">
-							<a class="flex items-center py-2 px-4 hover:bg-gray-300 dark:hover:bg-gray-700" href="#">
+				<nav class="pt-4">
+					<ul class="text-sm">
+						<li class="mb-1">
+							<a class="flex items-center py-2 px-4 hover:bg-slate-300 dark:hover:bg-slate-700" href="#">
 								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
 									fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-									stroke-linejoin="round" class="h-6 w-6">
+									stroke-linejoin="round" class="h-4 w-4">
 									<path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
 									<polyline points="9 22 9 12 15 12 15 22"></polyline>
 								</svg>
 								<span class="ml-2">Home</span>
 							</a>
 						</li>
-						<li class="mb-2">
-							<a class="flex items-center py-2 px-4 hover:bg-gray-300 dark:hover:bg-gray-700" href="#">
+						<li class="mb-1">
+							<a class="flex items-center py-2 px-4 hover:bg-slate-300 dark:hover:bg-slate-700" href="#">
 								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
 									fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-									stroke-linejoin="round" class="h-6 w-6">
+									stroke-linejoin="round" class="h-4 w-4">
 									<path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
 									<circle cx="12" cy="7" r="4"></circle>
 								</svg>
-								<span class="ml-2">Profile</span>
+								<span class="ml-2 flex flex-auto w-full">
+									<span class="flex-auto">Profile</span>
+									<span
+										class="inline-flex items-center rounded-md bg-slate-300 dark:bg-slate-600 px-2 py-1 text-xs font-medium dark:text-slate-50 text-slate-950 ring-1 ring-inset ring-slate-400/10 dark:ring-slate-500/10 self-end flex-none">
+										<span class="text-red-500">
+											<svg class="w-2 h-2 me-1" fill="currentColor" viewBox="0 0 6 6"
+												aria-hidden="true">
+												<circle cx="3" cy="3" r="3"></circle>
+											</svg>
+										</span>
+										10
+									</span>
+								</span>
 							</a>
 						</li>
-						<li class="mb-2">
-							<a class="flex items-center py-2 px-4 hover:bg-gray-300 dark:hover:bg-gray-700" href="#">
+						<li class="mb-1">
+							<a class="flex items-center py-2 px-4 hover:bg-slate-300 dark:hover:bg-slate-700" href="#">
 								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
 									fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-									stroke-linejoin="round" class="h-6 w-6">
+									stroke-linejoin="round" class="h-4 w-4">
 									<path
 										d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z">
 									</path>
@@ -87,7 +100,7 @@
 		<main class="relative md:ml-48">
 			<!-- Navbar1 -->
 			<nav
-				class="sm:flex sm:flex-row sm:items-center md:h-14 px-4 border-b-[1px] gap-4 md:gap-6 text-black dark:text-white bg-white dark:bg-gray-900 border-gray-300 dark:border-gray-600">
+				class="sm:flex sm:flex-row sm:items-center md:h-14 px-4 border-b-[1px] gap-4 md:gap-6 text-slate-950 dark:text-slate-50 bg-slate-200 dark:bg-slate-800 border-slate-300 dark:border-slate-600">
 				<div class="sm:flex sm:items-center sm:space-x-2 lg:space-x-4">
 					<a class="flex items-center space-x-2 text-lg font-bold" href="#">
 						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -125,14 +138,14 @@
 									d="M19 9l-7 7-7-7"></path>
 							</svg>
 						</button>
-						<div class="sm:absolute sm:min-w-48 sm:top-[100%] sm:right-0 text-black dark:text-white sm:bg-white sm:dark:bg-gray-900 sm:border-gray-300 sm:dark:border-gray-600 sm:border-[1px] px-4 py-3 sm:rounded sm:hidden"
+						<div class="sm:absolute sm:min-w-48 sm:top-[100%] sm:right-0 text-slate-950 dark:text-slate-50 sm:bg-slate-200 sm:dark:bg-slate-800 sm:border-slate-300 sm:dark:border-slate-600 sm:border-[1px] px-4 py-3 sm:rounded sm:hidden"
 							id="toggle-target-1" onmouseenter="timeoutMouseEnter(event)"
 							onmouseleave="timeoutMouseLeave(event)">
-							<a class="text-sm font-medium hover:underline block sm:border-b-[1px] border-gray-300 dark:border-gray-600 mb-2 pb-1"
+							<a class="text-sm font-medium hover:underline block sm:border-b-[1px] border-slate-300 dark:border-slate-600 mb-2 pb-1"
 								href="#">
 								Basic
 							</a>
-							<a class="text-sm font-medium hover:underline block sm:border-b-[1px] border-gray-300 dark:border-gray-600 mb-2 pb-1"
+							<a class="text-sm font-medium hover:underline block sm:border-b-[1px] border-slate-300 dark:border-slate-600 mb-2 pb-1"
 								href="#">
 								Pro
 							</a>
@@ -146,7 +159,7 @@
 					</a>
 					<div class="relative">
 						<button
-							class="inline-flex h-8 w-8 rounded-full border border-gray-200 items-center justify-center overflow-hidden ring-gray-900/40 dark:ring-gray-50/40 hover:ring-[1px]"
+							class="inline-flex h-8 w-8 rounded-full border border-slate-300 items-center justify-center overflow-hidden ring-slate-900/40 dark:ring-slate-100/40 hover:ring-[1px]"
 							onclick="toggleElement('toggle-target-2')">
 							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
 								stroke="currentColor" class="rounded-full" height=16 width=16>
@@ -158,13 +171,13 @@
 								Toggle navigation menu
 							</span>
 						</button>
-						<div class="sm:absolute sm:min-w-48 sm:top-[100%] sm:right-0 text-black dark:text-white sm:bg-white sm:dark:bg-gray-900 sm:border-gray-300 sm:dark:border-gray-600 sm:border-[1px] px-5 py-3 sm:rounded text-center sm:hidden"
+						<div class="sm:absolute sm:min-w-48 sm:top-[100%] sm:right-0 text-slate-950 dark:text-slate-50 sm:bg-slate-200 sm:dark:bg-slate-800 sm:border-slate-300 sm:dark:border-slate-600 sm:border-[1px] px-5 py-3 sm:rounded text-center sm:hidden"
 							id="toggle-target-2" onmouseenter="timeoutMouseEnter(event)"
 							onmouseleave="timeoutMouseLeave(event)">
 							<a class="text-sm font-medium hover:underline block mb-2" href="#">
 								user@email.com
 							</a>
-							<a class="inline-flex h-12 w-12 rounded-full border border-gray-200 items-center justify-center overflow-hidden ring-gray-900/40 dark:ring-gray-50/40 hover:ring-[1px] mb-2"
+							<a class="inline-flex h-12 w-12 rounded-full border border-slate-300 items-center justify-center overflow-hidden ring-slate-900/40 dark:ring-slate-100/40 hover:ring-[1px] mb-2"
 								href="#">
 								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
 									stroke="currentColor" class="rounded-full mx-auto" height=32 width=32>
@@ -190,10 +203,10 @@
 
 			<!-- SignInUp1 -->
 			<div
-				class="w-full min-h-screen flex flex-col items-center justify-center pt-20 pb-20 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 dark:from-gray-700 dark:via-gray-800 dark:to-gray-900 shadow-2xl dark:text-white text-black">
+				class="w-full min-h-screen flex flex-col items-center justify-center pt-20 pb-20 bg-gradient-to-r from-slate-400 via-slate-300 to-slate-400 dark:from-slate-700 dark:via-slate-800 dark:to-slate-900 shadow-2xl dark:text-slate-50 text-slate-950">
 				<!-- SignIn1 -->
 				<div
-					class="w-full max-w-md bg-white dark:bg-gray-800 shadow-md sm:rounded-lg px-8 pt-6 pb-8 mb-4 border-solid border-[1px] border-gray-200 dark:border-gray-700 mx-auto">
+					class="w-full max-w-md bg-slate-200 dark:bg-slate-800 shadow-md sm:rounded-lg px-8 pt-6 pb-8 mb-4 border-solid border-[1px] border-slate-300 dark:border-slate-600 mx-auto">
 					<div class="mb-4 flex items-center justify-center">
 						<svg width="64" height="32" viewBox="0 0 64 32" fill="currentColor"
 							xmlns="http://www.w3.org/2000/svg">
@@ -216,7 +229,7 @@
 								Username
 							</label>
 							<input
-								class="flex h-10 border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none dark:text-white dark:bg-gray-600 dark:ring-gray-600"
+								class="flex h-10 border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full px-3 py-2 text-slate-700 border rounded-lg focus:outline-none dark:text-slate-50 dark:bg-slate-600 dark:ring-slate-600"
 								id="signin1-username" placeholder="Username" type="text" />
 							<p class="text-xs font-medium leading-none text-red-500 mt-1 hidden">
 								Error message goes here
@@ -229,7 +242,7 @@
 								Password
 							</label>
 							<input
-								class="flex h-10 border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none dark:text-white dark:bg-gray-600 dark:ring-gray-600"
+								class="flex h-10 border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full px-3 py-2 text-slate-700 border rounded-lg focus:outline-none dark:text-slate-50 dark:bg-slate-600 dark:ring-slate-600"
 								id="signin1-password" placeholder="*********" type="password" />
 							<p class="text-xs font-medium leading-none text-red-500 mt-1 hidden">
 								Error message goes here
@@ -260,7 +273,7 @@
 									Remember Me
 								</label>
 							</div>
-							<a class="text-sm text-gray-700 underline dark:text-gray-200 sm:inline-block block sm:mt-0 mt-4"
+							<a class="text-sm text-slate-700 underline dark:text-slate-200 sm:inline-block block sm:mt-0 mt-4"
 								href="#">
 								Forgot Password?
 							</a>
@@ -272,7 +285,7 @@
 								Captcha
 							</label>
 							<input
-								class="flex h-10 border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none dark:text-white dark:bg-gray-600 dark:ring-gray-600"
+								class="flex h-10 border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full px-3 py-2 text-slate-700 border rounded-lg focus:outline-none dark:text-slate-50 dark:bg-slate-600 dark:ring-slate-600"
 								id="signin1-captcha" placeholder="Enter Captcha" type="text" />
 							<p class="text-xs font-medium leading-none text-red-500 mt-1 hidden">
 								Error message goes here
@@ -280,21 +293,21 @@
 						</div>
 						<div class="mt-6">
 							<button
-								class="inline-flex items-center justify-center whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 w-full py-2 px-4 text-center bg-gray-800 rounded-md text-white text-sm hover:bg-gray-700 focus:outline-none dark:bg-gray-600 dark:text-white dark:hover:bg-gray-500"
+								class="inline-flex items-center justify-center slate-100space-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 w-full py-2 px-4 text-center bg-slate-800 rounded-md text-slate-50 text-sm hover:bg-slate-700 focus:outline-none dark:bg-slate-600 dark:text-slate-50 dark:hover:bg-slate-2000"
 								type="submit">
 								Login
 							</button>
 						</div>
 						<div class="mt-6">
 							<button
-								class="inline-flex items-center justify-center whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 w-full py-2 px-4 text-center bg-blue-600 rounded-md text-white text-sm hover:bg-blue-500 focus:outline-none"
+								class="inline-flex items-center justify-center slate-100space-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 w-full py-2 px-4 text-center bg-blue-600 rounded-md text-slate-50 text-sm hover:bg-blue-500 focus:outline-none"
 								type="button">
 								Login with Google
 							</button>
 						</div>
 						<div class="mt-6">
 							<button
-								class="inline-flex items-center justify-center whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 w-full py-2 px-4 text-center bg-blue-800 rounded-md text-white text-sm hover:bg-blue-700 focus:outline-none"
+								class="inline-flex items-center justify-center slate-100space-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 w-full py-2 px-4 text-center bg-blue-800 rounded-md text-slate-50 text-sm hover:bg-blue-700 focus:outline-none"
 								type="button">
 								Login with Facebook
 							</button>
@@ -305,7 +318,7 @@
 
 				<!-- SignUp1 -->
 				<div
-					class="w-full max-w-md bg-white dark:bg-gray-800 shadow-md sm:rounded-lg px-8 pt-6 pb-8 mb-4 mt-8 border-solid border-[1px] border-gray-200 dark:border-gray-700 mx-auto">
+					class="w-full max-w-md bg-slate-200 dark:bg-slate-800 shadow-md sm:rounded-lg px-8 pt-6 pb-8 mb-4 mt-8 border-solid border-[1px] border-slate-300 dark:border-slate-600 mx-auto">
 					<div class="mb-4 flex items-center justify-center">
 						<svg width="64" height="32" viewBox="0 0 64 32" fill="currentColor"
 							xmlns="http://www.w3.org/2000/svg">
@@ -328,7 +341,7 @@
 								Username
 							</label>
 							<input
-								class="flex h-10 border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none dark:text-white dark:bg-gray-600 dark:ring-gray-600"
+								class="flex h-10 border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full px-3 py-2 text-slate-700 border rounded-lg focus:outline-none dark:text-slate-50 dark:bg-slate-600 dark:ring-slate-600"
 								id="signup1-username" placeholder="Username" type="text" />
 							<p class="text-xs font-medium leading-none text-red-500 mt-1 hidden">
 								Error message goes here
@@ -341,7 +354,7 @@
 								Email
 							</label>
 							<input
-								class="flex h-10 border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none dark:text-white dark:bg-gray-600 dark:ring-gray-600"
+								class="flex h-10 border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full px-3 py-2 text-slate-700 border rounded-lg focus:outline-none dark:text-slate-50 dark:bg-slate-600 dark:ring-slate-600"
 								id="signup1-email" placeholder="Email" type="email" />
 							<p class="text-xs font-medium leading-none text-red-500 mt-1 hidden">
 								Error message goes here
@@ -354,7 +367,7 @@
 								Password
 							</label>
 							<input
-								class="flex h-10 border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none dark:text-white dark:bg-gray-600 dark:ring-gray-600"
+								class="flex h-10 border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full px-3 py-2 text-slate-700 border rounded-lg focus:outline-none dark:text-slate-50 dark:bg-slate-600 dark:ring-slate-600"
 								id="signup1-password" placeholder="*********" type="password" />
 							<p class="text-xs font-medium leading-none text-red-500 mt-1 hidden">
 								Error message goes here
@@ -367,7 +380,7 @@
 								Confirm Password
 							</label>
 							<input
-								class="flex h-10 border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none dark:text-white dark:bg-gray-600 dark:ring-gray-600"
+								class="flex h-10 border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full px-3 py-2 text-slate-700 border rounded-lg focus:outline-none dark:text-slate-50 dark:bg-slate-600 dark:ring-slate-600"
 								id="signup1-confirm-password" placeholder="*********" type="password" />
 							<p class="text-xs font-medium leading-none text-red-500 mt-1 hidden">
 								Error message goes here
@@ -380,7 +393,7 @@
 								Captcha
 							</label>
 							<input
-								class="flex h-10 border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none dark:text-white dark:bg-gray-600 dark:ring-gray-600"
+								class="flex h-10 border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full px-3 py-2 text-slate-700 border rounded-lg focus:outline-none dark:text-slate-50 dark:bg-slate-600 dark:ring-slate-600"
 								id="signup1-captcha" placeholder="Enter Captcha" type="text" />
 							<p class="text-xs font-medium leading-none text-red-500 mt-1 hidden">
 								Error message goes here
@@ -388,21 +401,21 @@
 						</div>
 						<div class="mt-6">
 							<button
-								class="inline-flex items-center justify-center whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 w-full py-2 px-4 text-center bg-gray-800 rounded-md text-white text-sm hover:bg-gray-700 focus:outline-none dark:bg-gray-600 dark:text-white dark:hover:bg-gray-500"
+								class="inline-flex items-center justify-center space-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 w-full py-2 px-4 text-center bg-slate-800 rounded-md text-slate-50 text-sm hover:bg-slate-700 focus:outline-none dark:bg-slate-600 dark:text-slate-50 dark:hover:bg-slate-2000"
 								type="submit">
 								Sign Up
 							</button>
 						</div>
 						<div class="mt-6">
 							<button
-								class="inline-flex items-center justify-center whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 w-full py-2 px-4 text-center bg-blue-600 rounded-md text-white text-sm hover:bg-blue-500 focus:outline-none"
+								class="inline-flex items-center justify-center space-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 w-full py-2 px-4 text-center bg-blue-600 rounded-md text-slate-50 text-sm hover:bg-blue-500 focus:outline-none"
 								type="button">
 								Sign Up with Google
 							</button>
 						</div>
 						<div class="mt-6">
 							<button
-								class="inline-flex items-center justify-center whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 w-full py-2 px-4 text-center bg-blue-800 rounded-md text-white text-sm hover:bg-blue-700 focus:outline-none"
+								class="inline-flex items-center justify-center space-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 w-full py-2 px-4 text-center bg-blue-800 rounded-md text-slate-50 text-sm hover:bg-blue-700 focus:outline-none"
 								type="button">
 								Sign Up with Facebook
 							</button>
@@ -416,10 +429,10 @@
 
 			<!-- Pricing1 -->
 			<section
-				class="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 dark:from-gray-700 dark:via-gray-800 dark:to-gray-900">
-				<div class="container px-4 text-center md:px-6 lg:gap-10 dark:text-white mx-auto">
+				class="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-slate-400 via-slate-300 to-slate-400 dark:from-slate-700 dark:via-slate-800 dark:to-slate-900">
+				<div class="container px-4 text-center md:px-6 lg:gap-10 dark:text-slate-50 mx-auto">
 					<div
-						class="space-y-3 bg-white dark:bg-gray-800 shadow-md sm:rounded-lg px-8 pt-6 pb-8 mb-4 border-solid border-[1px] border-gray-200 dark:border-gray-700">
+						class="space-y-3 bg-slate-200 dark:bg-slate-800 shadow-md sm:rounded-lg px-8 pt-6 pb-8 mb-4 border-solid border-[1px] border-slate-300 dark:border-slate-600">
 						<h2 class="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl">
 							Choose the perfect plan for your team
 						</h2>
@@ -430,7 +443,7 @@
 					</div>
 					<div class="flex mx-auto justify-center items-center gap-4 lg:gap-6 flex-wrap">
 						<div
-							class="flex-1 sm:flex-none flex flex-col items-center gap-1 md:gap-2 lg:grid place-items-center/only-child bg-white dark:bg-gray-800 shadow-md sm:rounded-lg px-2 md:px-8 pt-3 md:pt-6 pb-4 md:pb-8 mb-4 dark:text-white border-solid border-[1px] border-gray-200 dark:border-gray-700">
+							class="flex-1 sm:flex-none flex flex-col items-center gap-1 md:gap-2 lg:grid place-items-center/only-child bg-slate-200 dark:bg-slate-800 shadow-md sm:rounded-lg px-2 md:px-8 pt-3 md:pt-6 pb-4 md:pb-8 mb-4 dark:text-slate-50 border-solid border-[1px] border-slate-300 dark:border-slate-600">
 							<div class="flex items-center gap-2 justify-center">
 								<span class="text-blue-200 dark:text-blue-100">
 									<svg xmlns="http://www.w3.org/2000/svg" stroke="currentColor"
@@ -467,13 +480,13 @@
 									Starter
 								</h3>
 							</div>
-							<p class="text-sm text-gray-500 dark:text-gray-400">
+							<p class="text-sm text-slate-500 dark:text-slate-400">
 								Starts at
 							</p>
-							<p class="text-2xl font-extrabold" id="rz2ilmg6br9">
+							<p class="text-2xl font-extrabold">
 								$19/mo
 							</p>
-							<p class="text-sm text-gray-500 dark:text-gray-400">
+							<p class="text-sm text-slate-500 dark:text-slate-400">
 								billed at
 								<span class="line-through">$600</span>
 								$500/yr
@@ -495,7 +508,7 @@
 									</svg>
 									Unlimited team members
 								</li>
-								<li class="sm:flex items-center gap-2" id="zvek7l8ocxd">
+								<li class="sm:flex items-center gap-2">
 									<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"
 										xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 hidden sm:inline-block">
 										<path d="M12 6v6m0 0v6m0-6h6m-6 0H6" stroke-linecap="round"
@@ -503,7 +516,7 @@
 									</svg>
 									Unlimited team members
 								</li>
-								<li class="sm:flex items-center gap-2" id="zvek7l8ocxd">
+								<li class="sm:flex items-center gap-2">
 									<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"
 										xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 hidden sm:inline-block">
 										<path d="M12 6v6m0 0v6m0-6h6m-6 0H6" stroke-linecap="round"
@@ -521,9 +534,9 @@
 								</li>
 								<li>
 									<ul
-										class="flex flex-col sm:flex-row gap-1 p-2 font-sans text-base font-normal text-blue-gray-700">
+										class="flex flex-col sm:flex-row gap-1 p-2 font-sans text-base font-normal text-blue-slate-700">
 										<li role="button"
-											class="flex items-center w-full p-0 leading-tight transition-all rounded-lg outline-none text-start hover:bg-blue-gray-50 hover:bg-opacity-80 hover:text-blue-gray-900 focus:bg-blue-gray-50 focus:bg-opacity-80 focus:text-blue-gray-900 active:bg-blue-gray-50 active:bg-opacity-80 active:text-blue-gray-900">
+											class="flex items-center w-full p-0 leading-tight transition-all rounded-lg outline-none text-start hover:bg-blue-slate-100 hover:bg-opacity-80 hover:text-blue-slate-900 focus:bg-blue-slate-100 focus:bg-opacity-80 focus:text-blue-slate-900 active:bg-blue-slate-100 active:bg-opacity-80 active:text-blue-slate-900">
 											<label for="horizontal-list-react-1"
 												class="flex items-center w-full px-3 py-2 cursor-pointer">
 												<div class="grid mr-3 place-items-center">
@@ -532,9 +545,9 @@
 															class="relative flex items-center p-0 rounded-full cursor-pointer">
 															<input name="horizontal-list-1" id="horizontal-list-react-1"
 																type="radio"
-																class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-gray-200 text-gray-900 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-gray-900 checked:before:bg-gray-900 hover:before:opacity-0" />
+																class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-slate-200 text-slate-950 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-slate-1000 before:opacity-0 before:transition-opacity checked:border-slate-900 checked:before:bg-slate-800 hover:before:opacity-0" />
 															<span
-																class="absolute text-gray-900 transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+																class="absolute text-slate-950 transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
 																<svg xmlns="http://www.w3.org/2000/svg"
 																	viewBox="0 0 16 16" fill="currentColor"
 																	class="h-3.5 w-3.5">
@@ -546,13 +559,13 @@
 													</div>
 												</div>
 												<p
-													class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-400">
+													class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-slate-400">
 													Monthly
 												</p>
 											</label>
 										</li>
 										<li role="button"
-											class="flex items-center w-full p-0 leading-tight transition-all rounded-lg outline-none text-start hover:bg-blue-gray-50 hover:bg-opacity-80 hover:text-blue-gray-900 focus:bg-blue-gray-50 focus:bg-opacity-80 focus:text-blue-gray-900 active:bg-blue-gray-50 active:bg-opacity-80 active:text-blue-gray-900">
+											class="flex items-center w-full p-0 leading-tight transition-all rounded-lg outline-none text-start hover:bg-blue-slate-100 hover:bg-opacity-80 hover:text-blue-slate-900 focus:bg-blue-slate-100 focus:bg-opacity-80 focus:text-blue-slate-900 active:bg-blue-slate-100 active:bg-opacity-80 active:text-blue-slate-900">
 											<label for="horizontal-list-vue-1"
 												class="flex items-center w-full px-3 py-2 cursor-pointer">
 												<div class="grid mr-3 place-items-center">
@@ -561,9 +574,9 @@
 															class="relative flex items-center p-0 rounded-full cursor-pointer">
 															<input name="horizontal-list-1" id="horizontal-list-vue-1"
 																type="radio"
-																class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-gray-200 text-gray-900 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-gray-900 checked:before:bg-gray-900 hover:before:opacity-0" />
+																class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-slate-200 text-slate-950 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-slate-1000 before:opacity-0 before:transition-opacity checked:border-slate-900 checked:before:bg-slate-800 hover:before:opacity-0" />
 															<span
-																class="absolute text-gray-900 transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+																class="absolute text-slate-950 transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
 																<svg xmlns="http://www.w3.org/2000/svg"
 																	viewBox="0 0 16 16" fill="currentColor"
 																	class="h-3.5 w-3.5">
@@ -575,7 +588,7 @@
 													</div>
 												</div>
 												<p
-													class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-400">
+													class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-slate-400">
 													Yearly
 												</p>
 											</label>
@@ -584,13 +597,13 @@
 								</li>
 							</ul>
 							<button
-								class="inline-flex items-center justify-center whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 py-2 px-4 text-center bg-gray-800 rounded-md text-white text-sm hover:bg-gray-700 focus:outline-none dark:bg-gray-600 dark:text-white dark:hover:bg-gray-500 w-full"
+								class="inline-flex items-center justify-center slate-100space-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 py-2 px-4 text-center bg-slate-800 rounded-md text-slate-50 text-sm hover:bg-slate-700 focus:outline-none dark:bg-slate-600 dark:text-slate-50 dark:hover:bg-slate-2000 w-full"
 								type="submit">
 								Subscribe
 							</button>
 						</div>
 						<div
-							class="flex-1 sm:flex-none flex flex-col items-center gap-1 md:gap-2 lg:grid place-items-center/only-child bg-white dark:bg-gray-800 shadow-md sm:rounded-lg px-2 md:px-8 pt-3 md:pt-6 pb-4 md:pb-8 mb-4 dark:text-white border-solid border-[1px] border-gray-200 dark:border-gray-700">
+							class="flex-1 sm:flex-none flex flex-col items-center gap-1 md:gap-2 lg:grid place-items-center/only-child bg-slate-200 dark:bg-slate-800 shadow-md sm:rounded-lg px-2 md:px-8 pt-3 md:pt-6 pb-4 md:pb-8 mb-4 dark:text-slate-50 border-solid border-[1px] border-slate-300 dark:border-slate-600">
 							<div class="flex items-center gap-2 justify-center">
 								<span class="text-blue-600 dark:text-blue-300">
 									<svg xmlns="http://www.w3.org/2000/svg" stroke="currentColor"
@@ -626,13 +639,13 @@
 									Pro
 								</h3>
 							</div>
-							<p class="text-sm text-gray-500 dark:text-gray-400">
+							<p class="text-sm text-slate-500 dark:text-slate-400">
 								Starts at
 							</p>
-							<p class="text-2xl font-extrabold" id="rz2ilmg6br9">
+							<p class="text-2xl font-extrabold">
 								$49/mo
 							</p>
-							<p class="text-sm text-gray-500 dark:text-gray-400">
+							<p class="text-sm text-slate-500 dark:text-slate-400">
 								billed at
 								<span class="line-through">$600</span>
 								$500/yr
@@ -654,7 +667,7 @@
 									</svg>
 									Unlimited team members
 								</li>
-								<li class="sm:flex items-center gap-2" id="zvek7l8ocxd">
+								<li class="sm:flex items-center gap-2">
 									<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"
 										xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 hidden sm:inline-block">
 										<path d="M12 6v6m0 0v6m0-6h6m-6 0H6" stroke-linecap="round"
@@ -662,7 +675,7 @@
 									</svg>
 									Unlimited team members
 								</li>
-								<li class="sm:flex items-center gap-2" id="zvek7l8ocxd">
+								<li class="sm:flex items-center gap-2">
 									<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"
 										xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 hidden sm:inline-block">
 										<path d="M12 6v6m0 0v6m0-6h6m-6 0H6" stroke-linecap="round"
@@ -680,9 +693,9 @@
 								</li>
 								<li>
 									<ul
-										class="flex flex-col sm:flex-row gap-1 p-2 font-sans text-base font-normal text-blue-gray-700">
+										class="flex flex-col sm:flex-row gap-1 p-2 font-sans text-base font-normal text-blue-slate-700">
 										<li role="button"
-											class="flex items-center w-full p-0 leading-tight transition-all rounded-lg outline-none text-start hover:bg-blue-gray-50 hover:bg-opacity-80 hover:text-blue-gray-900 focus:bg-blue-gray-50 focus:bg-opacity-80 focus:text-blue-gray-900 active:bg-blue-gray-50 active:bg-opacity-80 active:text-blue-gray-900">
+											class="flex items-center w-full p-0 leading-tight transition-all rounded-lg outline-none text-start hover:bg-blue-slate-100 hover:bg-opacity-80 hover:text-blue-slate-900 focus:bg-blue-slate-100 focus:bg-opacity-80 focus:text-blue-slate-900 active:bg-blue-slate-100 active:bg-opacity-80 active:text-blue-slate-900">
 											<label for="horizontal-list-react-2"
 												class="flex items-center w-full px-3 py-2 cursor-pointer">
 												<div class="grid mr-3 place-items-center">
@@ -691,9 +704,9 @@
 															class="relative flex items-center p-0 rounded-full cursor-pointer">
 															<input name="horizontal-list-2" id="horizontal-list-react-2"
 																type="radio"
-																class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-gray-200 text-gray-900 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-gray-900 checked:before:bg-gray-900 hover:before:opacity-0" />
+																class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-slate-200 text-slate-950 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-slate-1000 before:opacity-0 before:transition-opacity checked:border-slate-900 checked:before:bg-slate-800 hover:before:opacity-0" />
 															<span
-																class="absolute text-gray-900 transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+																class="absolute text-slate-950 transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
 																<svg xmlns="http://www.w3.org/2000/svg"
 																	viewBox="0 0 16 16" fill="currentColor"
 																	class="h-3.5 w-3.5">
@@ -705,13 +718,13 @@
 													</div>
 												</div>
 												<p
-													class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-400">
+													class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-slate-400">
 													Monthly
 												</p>
 											</label>
 										</li>
 										<li role="button"
-											class="flex items-center w-full p-0 leading-tight transition-all rounded-lg outline-none text-start hover:bg-blue-gray-50 hover:bg-opacity-80 hover:text-blue-gray-900 focus:bg-blue-gray-50 focus:bg-opacity-80 focus:text-blue-gray-900 active:bg-blue-gray-50 active:bg-opacity-80 active:text-blue-gray-900">
+											class="flex items-center w-full p-0 leading-tight transition-all rounded-lg outline-none text-start hover:bg-blue-slate-100 hover:bg-opacity-80 hover:text-blue-slate-900 focus:bg-blue-slate-100 focus:bg-opacity-80 focus:text-blue-slate-900 active:bg-blue-slate-100 active:bg-opacity-80 active:text-blue-slate-900">
 											<label for="horizontal-list-vue-2"
 												class="flex items-center w-full px-3 py-2 cursor-pointer">
 												<div class="grid mr-3 place-items-center">
@@ -720,13 +733,13 @@
 															class="relative flex items-center p-0 rounded-full cursor-pointer">
 															<input name="horizontal-list-2" id="horizontal-list-vue-2"
 																type="radio"
-																class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-gray-200 text-gray-900 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-gray-900 checked:before:bg-gray-900 hover:before:opacity-0" />
+																class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-slate-200 text-slate-950 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-slate-1000 before:opacity-0 before:transition-opacity checked:border-slate-900 checked:before:bg-slate-800 hover:before:opacity-0" />
 															<span
-																class="absolute text-gray-900 transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+																class="absolute text-slate-950 transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
 																<svg xmlns="http://www.w3.org/2000/svg"
 																	viewBox="0 0 16 16" fill="currentColor"
 																	class="h-3.5 w-3.5">
-																	<circle data-name="ellipse" cx="8" cy="8" r="8">
+																	<circle cx="8" cy="8" r="8">
 																	</circle>
 																</svg>
 															</span>
@@ -734,7 +747,7 @@
 													</div>
 												</div>
 												<p
-													class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-400">
+													class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-slate-400">
 													Yearly
 												</p>
 											</label>
@@ -743,13 +756,13 @@
 								</li>
 							</ul>
 							<button
-								class="inline-flex items-center justify-center whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 w-full py-2 px-4 text-center bg-blue-600 rounded-md text-white text-sm hover:bg-blue-500 focus:outline-none"
+								class="inline-flex items-center justify-center slate-100space-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 w-full py-2 px-4 text-center bg-blue-600 rounded-md text-slate-50 text-sm hover:bg-blue-500 focus:outline-none"
 								type="submit">
 								Subscribe
 							</button>
 						</div>
 						<div
-							class="flex-1 sm:flex-none flex flex-col items-center gap-1 md:gap-2 lg:grid place-items-center/only-child bg-white dark:bg-gray-800 shadow-md sm:rounded-lg px-2 md:px-8 pt-3 md:pt-6 pb-4 md:pb-8 mb-4 dark:text-white border-solid border-[1px] border-gray-200 dark:border-gray-700">
+							class="flex-1 sm:flex-none flex flex-col items-center gap-1 md:gap-2 lg:grid place-items-center/only-child bg-slate-200 dark:bg-slate-800 shadow-md sm:rounded-lg px-2 md:px-8 pt-3 md:pt-6 pb-4 md:pb-8 mb-4 dark:text-slate-50 border-solid border-[1px] border-slate-300 dark:border-slate-600">
 							<div class="flex items-center gap-2 justify-center">
 								<span class="text-blue-700 dark:text-blue-400">
 									<svg xmlns="http://www.w3.org/2000/svg" stroke="currentColor"
@@ -785,13 +798,13 @@
 									Enterprise
 								</h3>
 							</div>
-							<p class="text-sm text-gray-500 dark:text-gray-400">
+							<p class="text-sm text-slate-500 dark:text-slate-400">
 								Starts at
 							</p>
-							<p class="text-2xl font-extrabold" id="rz2ilmg6br9">
+							<p class="text-2xl font-extrabold">
 								$99/mo
 							</p>
-							<p class="text-sm text-gray-500 dark:text-gray-400">
+							<p class="text-sm text-slate-500 dark:text-slate-400">
 								billed at
 								<span class="line-through">$600</span>
 								$500/yr
@@ -813,7 +826,7 @@
 									</svg>
 									Unlimited team members
 								</li>
-								<li class="sm:flex items-center gap-2" id="zvek7l8ocxd">
+								<li class="sm:flex items-center gap-2">
 									<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"
 										xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 hidden sm:inline-block">
 										<path d="M12 6v6m0 0v6m0-6h6m-6 0H6" stroke-linecap="round"
@@ -821,7 +834,7 @@
 									</svg>
 									Unlimited team members
 								</li>
-								<li class="sm:flex items-center gap-2" id="zvek7l8ocxd">
+								<li class="sm:flex items-center gap-2">
 									<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"
 										xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 hidden sm:inline-block">
 										<path d="M12 6v6m0 0v6m0-6h6m-6 0H6" stroke-linecap="round"
@@ -839,9 +852,9 @@
 								</li>
 								<li>
 									<ul
-										class="flex flex-col sm:flex-row gap-1 p-2 font-sans text-base font-normal text-blue-gray-700">
+										class="flex flex-col sm:flex-row gap-1 p-2 font-sans text-base font-normal text-blue-slate-700">
 										<li role="button"
-											class="flex items-center w-full p-0 leading-tight transition-all rounded-lg outline-none text-start hover:bg-blue-gray-50 hover:bg-opacity-80 hover:text-blue-gray-900 focus:bg-blue-gray-50 focus:bg-opacity-80 focus:text-blue-gray-900 active:bg-blue-gray-50 active:bg-opacity-80 active:text-blue-gray-900">
+											class="flex items-center w-full p-0 leading-tight transition-all rounded-lg outline-none text-start hover:bg-blue-slate-100 hover:bg-opacity-80 hover:text-blue-slate-900 focus:bg-blue-slate-100 focus:bg-opacity-80 focus:text-blue-slate-900 active:bg-blue-slate-100 active:bg-opacity-80 active:text-blue-slate-900">
 											<label for="horizontal-list-react-3"
 												class="flex items-center w-full px-3 py-2 cursor-pointer">
 												<div class="grid mr-3 place-items-center">
@@ -850,13 +863,13 @@
 															class="relative flex items-center p-0 rounded-full cursor-pointer">
 															<input name="horizontal-list-3" id="horizontal-list-react-3"
 																type="radio"
-																class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-gray-200 text-gray-900 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-gray-900 checked:before:bg-gray-900 hover:before:opacity-0" />
+																class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-slate-200 text-slate-950 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-slate-1000 before:opacity-0 before:transition-opacity checked:border-slate-900 checked:before:bg-slate-800 hover:before:opacity-0" />
 															<span
-																class="absolute text-gray-900 transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+																class="absolute text-slate-950 transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
 																<svg xmlns="http://www.w3.org/2000/svg"
 																	viewBox="0 0 16 16" fill="currentColor"
 																	class="h-3.5 w-3.5">
-																	<circle data-name="ellipse" cx="8" cy="8" r="8">
+																	<circle cx="8" cy="8" r="8">
 																	</circle>
 																</svg>
 															</span>
@@ -864,13 +877,13 @@
 													</div>
 												</div>
 												<p
-													class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-400">
+													class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-slate-400">
 													Monthly
 												</p>
 											</label>
 										</li>
 										<li role="button"
-											class="flex items-center w-full p-0 leading-tight transition-all rounded-lg outline-none text-start hover:bg-blue-gray-50 hover:bg-opacity-80 hover:text-blue-gray-900 focus:bg-blue-gray-50 focus:bg-opacity-80 focus:text-blue-gray-900 active:bg-blue-gray-50 active:bg-opacity-80 active:text-blue-gray-900">
+											class="flex items-center w-full p-0 leading-tight transition-all rounded-lg outline-none text-start hover:bg-blue-slate-100 hover:bg-opacity-80 hover:text-blue-slate-900 focus:bg-blue-slate-100 focus:bg-opacity-80 focus:text-blue-slate-900 active:bg-blue-slate-100 active:bg-opacity-80 active:text-blue-slate-900">
 											<label for="horizontal-list-vue-3"
 												class="flex items-center w-full px-3 py-2 cursor-pointer">
 												<div class="grid mr-3 place-items-center">
@@ -879,13 +892,13 @@
 															class="relative flex items-center p-0 rounded-full cursor-pointer">
 															<input name="horizontal-list-3" id="horizontal-list-vue-3"
 																type="radio"
-																class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-gray-200 text-gray-900 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-gray-900 checked:before:bg-gray-900 hover:before:opacity-0" />
+																class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-slate-200 text-slate-950 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-slate-1000 before:opacity-0 before:transition-opacity checked:border-slate-900 checked:before:bg-slate-800 hover:before:opacity-0" />
 															<span
-																class="absolute text-gray-900 transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+																class="absolute text-slate-950 transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
 																<svg xmlns="http://www.w3.org/2000/svg"
 																	viewBox="0 0 16 16" fill="currentColor"
 																	class="h-3.5 w-3.5">
-																	<circle data-name="ellipse" cx="8" cy="8" r="8">
+																	<circle cx="8" cy="8" r="8">
 																	</circle>
 																</svg>
 															</span>
@@ -893,7 +906,7 @@
 													</div>
 												</div>
 												<p
-													class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-400">
+													class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-slate-400">
 													Yearly
 												</p>
 											</label>
@@ -902,7 +915,7 @@
 								</li>
 							</ul>
 							<button
-								class="inline-flex items-center justify-center whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 w-full py-2 px-4 text-center bg-blue-800 rounded-md text-white text-sm hover:bg-blue-700 focus:outline-none"
+								class="inline-flex items-center justify-center slate-100space-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 w-full py-2 px-4 text-center bg-blue-800 rounded-md text-slate-50 text-sm hover:bg-blue-700 focus:outline-none"
 								type="submit">
 								Subscribe
 							</button>
@@ -914,7 +927,7 @@
 
 			<!-- Hero1 -->
 			<section
-				class="relative w-full min-h-screen sm:grid items:center dark:text-white text-black px-4 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 dark:from-gray-700 dark:via-gray-800 dark:to-gray-900 pb-10">
+				class="relative w-full min-h-screen sm:grid items:center dark:text-slate-50 text-slate-950 px-4 bg-gradient-to-r from-slate-400 via-slate-300 to-slate-400 dark:from-slate-700 dark:via-slate-800 dark:to-slate-900 pb-10">
 				<img alt="Hero" class="absolute inset-0 object-cover w-full h-full bg-cover z-[1] dark:block hidden"
 					src="images/hero1.jpg" />
 				<img alt="Hero" class="absolute inset-0 object-cover w-full h-full bg-cover z-[1] dark:hidden"
@@ -947,7 +960,7 @@
 							class="h-10 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 rounded-l-full rounded-r-full md:rounded-r-none flex-auto"
 							placeholder="Enter your email" />
 						<button
-							class="inline-flex items-center justify-center flex-none md:w-32 whitespace-nowrap rounded-md font-medium transition-colors rounded-r-full rounded-l-full md:rounded-l-none md:translate-x-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 py-2 px-4 text-center bg-blue-800 hover:bg-blue-700 text-white text-sm focus:outline-none uppercase">
+							class="inline-flex items-center justify-center flex-none md:w-32 slate-100space-nowrap rounded-md font-medium transition-colors rounded-r-full rounded-l-full md:rounded-l-none md:translate-x-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 py-2 px-4 text-center bg-blue-800 hover:bg-blue-700 text-slate-50 text-sm focus:outline-none uppercase">
 							Yes, I&apos;m in
 						</button>
 					</div>
@@ -956,7 +969,7 @@
 					</div>
 					<div class="mb-5 text-center md:text-left">
 						<button
-							class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground rounded-full m-1 bg-blue-600 hover:bg-blue-500 text-white w-8 h-8 p-2 border-blue-800 dark:border-blue-300 mx-0.5">
+							class="inline-flex items-center justify-center slate-100space-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground rounded-full m-1 bg-blue-600 hover:bg-blue-500 text-slate-50 w-8 h-8 p-2 border-blue-800 dark:border-blue-300 mx-0.5">
 							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
 								fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
 								stroke-linejoin="round">
@@ -967,7 +980,7 @@
 							<span class="sr-only">Twitter</span>
 						</button>
 						<button
-							class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground rounded-full m-1 bg-blue-600 hover:bg-blue-500 text-white w-8 h-8 p-2 border-blue-800 dark:border-blue-300 mx-0.5">
+							class="inline-flex items-center justify-center slate-100space-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground rounded-full m-1 bg-blue-600 hover:bg-blue-500 text-slate-50 w-8 h-8 p-2 border-blue-800 dark:border-blue-300 mx-0.5">
 							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
 								fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
 								stroke-linejoin="round">
@@ -978,7 +991,7 @@
 							<span class="sr-only">Instagram</span>
 						</button>
 						<button
-							class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground rounded-full m-1 bg-blue-600 hover:bg-blue-500 text-white w-8 h-8 p-2 border-blue-800 dark:border-blue-300 mx-0.5">
+							class="inline-flex items-center justify-center slate-100space-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground rounded-full m-1 bg-blue-600 hover:bg-blue-500 text-slate-50 w-8 h-8 p-2 border-blue-800 dark:border-blue-300 mx-0.5">
 							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
 								fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
 								stroke-linejoin="round">
@@ -997,11 +1010,11 @@
 			<!-- end of Hero1 -->
 
 			<!-- Hero2 -->
-
 			<section
-				class="relative w-full min-h-screen sm:grid items:center dark:text-white text-black bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 dark:from-gray-700 dark:via-gray-800 dark:to-gray-900 pb-10">
+				class="relative w-full min-h-screen sm:grid items:center dark:text-slate-50 text-slate-950 bg-gradient-to-r from-slate-300 via-slate-200 to-slate-300 dark:from-slate-700 dark:via-slate-800 dark:to-slate-900 pb-10">
 				<!-- Navbar2 -->
-				<nav class="sm:flex sm:flex-row sm:items-center md:h-14 px-4 gap-4 md:gap-6 text-black dark:text-white">
+				<nav
+					class="sm:flex sm:flex-row sm:items-center md:h-14 px-4 gap-4 md:gap-6 text-slate-950 dark:text-slate-50">
 					<div class="sm:flex sm:items-center sm:space-x-2 lg:space-x-4">
 						<a class="flex items-center space-x-2 text-lg font-bold" href="#">
 							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -1040,14 +1053,14 @@
 										d="M19 9l-7 7-7-7"></path>
 								</svg>
 							</button>
-							<div class="sm:absolute sm:min-w-48 sm:top-[100%] sm:right-0 text-black dark:text-white sm:bg-white sm:dark:bg-gray-900 sm:border-gray-300 sm:dark:border-gray-600 sm:border-[1px] px-4 py-3 sm:rounded sm:hidden"
+							<div class="sm:absolute sm:min-w-48 sm:top-[100%] sm:right-0 text-slate-950 dark:text-slate-50 sm:bg-slate-200 sm:dark:bg-slate-800 sm:border-slate-300 sm:dark:border-slate-600 sm:border-[1px] px-4 py-3 sm:rounded sm:hidden"
 								id="toggle-target-3" onmouseenter="timeoutMouseEnter(event)"
 								onmouseleave="timeoutMouseLeave(event)">
-								<a class="text-sm font-medium hover:underline block sm:border-b-[1px] border-gray-300 dark:border-gray-600 mb-2 pb-1"
+								<a class="text-sm font-medium hover:underline block sm:border-b-[1px] border-slate-300 dark:border-slate-600 mb-2 pb-1"
 									href="#">
 									Basic
 								</a>
-								<a class="text-sm font-medium hover:underline block sm:border-b-[1px] border-gray-300 dark:border-gray-600 mb-2 pb-1"
+								<a class="text-sm font-medium hover:underline block sm:border-b-[1px] border-slate-300 dark:border-slate-600 mb-2 pb-1"
 									href="#">
 									Pro
 								</a>
@@ -1061,7 +1074,7 @@
 						</a>
 						<div class="relative">
 							<button
-								class="inline-flex h-8 w-8 rounded-full border border-black dark:border-white items-center justify-center overflow-hidden ring-gray-900/40 dark:ring-gray-50/40 hover:ring-[1px]"
+								class="inline-flex h-8 w-8 rounded-full border border-slate-900 dark:border-slate-100 items-center justify-center overflow-hidden ring-slate-900/40 dark:ring-slate-100/40 hover:ring-[1px]"
 								onclick="toggleElement('toggle-target-4')">
 								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
 									stroke="currentColor" class="rounded-full" height=16 width=16>
@@ -1073,13 +1086,13 @@
 									Toggle navigation menu
 								</span>
 							</button>
-							<div class="sm:absolute sm:min-w-48 sm:top-[100%] sm:right-0 text-black dark:text-white sm:bg-white sm:dark:bg-gray-900 sm:border-gray-300 sm:dark:border-gray-600 sm:border-[1px] px-5 py-3 sm:rounded text-center sm:hidden"
+							<div class="sm:absolute sm:min-w-48 sm:top-[100%] sm:right-0 text-slate-950 dark:text-slate-50 sm:bg-slate-200 sm:dark:bg-slate-800 sm:border-slate-300 sm:dark:border-slate-600 sm:border-[1px] px-5 py-3 sm:rounded text-center sm:hidden"
 								id="toggle-target-4" onmouseenter="timeoutMouseEnter(event)"
 								onmouseleave="timeoutMouseLeave(event)">
 								<a class="text-sm font-medium hover:underline block mb-2" href="#">
 									user@email.com
 								</a>
-								<a class="inline-flex h-12 w-12 rounded-full border border-gray-200 items-center justify-center overflow-hidden ring-gray-900/40 dark:ring-gray-50/40 hover:ring-[1px] mb-2"
+								<a class="inline-flex h-12 w-12 rounded-full border border-slate-300 items-center justify-center overflow-hidden ring-slate-900/40 dark:ring-slate-100/40 hover:ring-[1px] mb-2"
 									href="#">
 									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
 										stroke="currentColor" class="rounded-full mx-auto" height=32 width=32>
@@ -1104,27 +1117,30 @@
 				<!-- end of Navbar2 -->
 				<div class="container sm:px-12 px-4">
 					<div class="grid gap-4 lg:grid-flow-row lg:grid-cols-5 grid-cols-1">
-						<div class="lg:col-span-3 col-span-1 sm:pt-[4vh]">
-							<h1 class="text-4xl font-bold tracking-tighter lg:text-5xl/none sm:mb-[4vh] mb-4">
+						<div class="lg:col-span-3 col-span-1 sm:pt-[4vh] sm:pe-10">
+							<h1
+								class="text-4xl font-bold tracking-tighter lg:text-5xl/none sm:mb-[4vh] mb-4 text-slate-800 dark:text-slate-200">
 								The future of frontend development
 							</h1>
 							<h1 class="text-3xl font-bold tracking-tighter lg:text-4xl/none sm:mb-[4vh] mb-4">
 								Semper viverra nam libero justo laoreet sit amet cursus sit.
 							</h1>
-							<p class="text-sm sm:mb-[6vh] mb-4">
+							<p
+								class="text-sm font-medium leading-tight sm:mb-[2vh] mb-3 text-slate-800 dark:text-slate-200">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 								incididunt ut labore et dolore magna aliqua. Augue ut lectus arcu bibendum at varius vel
 								pharetra. Convallis posuere morbi leo urna molestie. Tellus orci ac auctor augue mauris.
 								Erat velit scelerisque in dictum.
 							</p>
-							<p class="text-sm sm:mb-[6vh] mb-4">
+							<p
+								class="text-sm font-medium leading-tight sm:mb-[6vh] mb-4 text-slate-800 dark:text-slate-200">
 								Sed arcu non odio euismod lacinia at quis risus sed. Donec et odio pellentesque diam
 								volutpat commodo. Placerat duis ultricies lacus sed turpis tincidunt id aliquet risus.
 							</p>
-							<div class="grid gap-4 lg:grid-flow-row lg:grid-cols-2 grid-cols-1 text-center">
+							<div class="grid gap-4 md:grid-flow-row md:grid-cols-2 grid-cols-1 text-center">
 								<div class="col-span-1 flex items-center justify-center">
 									<div
-										class="inline-flex h-16 w-16 rounded-full border-4 border-gray-800 dark:border-gray-300 items-center justify-center overflow-hidden ring-gray-900/40 dark:ring-gray-50/40 hover:ring-[1px]">
+										class="inline-flex h-16 w-16 rounded-full border-4 border-slate-800 dark:border-slate-300 items-center justify-center overflow-hidden ring-slate-900/40 dark:ring-slate-100/40 hover:ring-[1px]">
 										<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"
 											viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
 											stroke-linecap="round" stroke-linejoin="round">
@@ -1134,14 +1150,14 @@
 										<!-- <img alt="Avatar" class="rounded-full" height="100%" width="100%" src="/placeholder.svg"/> -->
 									</div>
 									<div class="inline-flex flex-col ms-2 text-xs leading-tight">
-										<p class="font-bold">John Doe</p>
+										<p class="font-bold text-slate-800 dark:text-slate-200">John Doe</p>
 										<p>Senior Dev.</p>
-										<p>Doe compony</p>
+										<p class="font-medium text-slate-800 dark:text-slate-200">Doe compony</p>
 									</div>
 								</div>
 								<div class="col-span-1 flex items-center justify-center">
 									<div
-										class="inline-flex h-16 w-16 rounded-full border-4 border-gray-800 dark:border-gray-300 items-center justify-center overflow-hidden ring-gray-900/40 dark:ring-gray-50/40 hover:ring-[1px]">
+										class="inline-flex h-16 w-16 rounded-full border-4 border-slate-800 dark:border-slate-300 items-center justify-center overflow-hidden ring-slate-900/40 dark:ring-slate-100/40 hover:ring-[1px]">
 										<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"
 											viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
 											stroke-linecap="round" stroke-linejoin="round">
@@ -1151,9 +1167,9 @@
 										<!-- <img alt="Avatar" class="rounded-full" height="100%" width="100%" src="/placeholder.svg"/> -->
 									</div>
 									<div class="inline-flex flex-col ms-2 text-xs leading-tight">
-										<p class="font-bold">John Doe</p>
+										<p class="font-bold text-slate-800 dark:text-slate-200">John Doe</p>
 										<p>Senior Dev.</p>
-										<p>Doe compony</p>
+										<p class="font-medium text-slate-800 dark:text-slate-200">Doe compony</p>
 									</div>
 								</div>
 							</div>
@@ -1161,7 +1177,7 @@
 						<div class="lg:col-span-2 col-span-1">
 							<!-- SignUp2 -->
 							<div
-								class="w-full max-w-md bg-white dark:bg-gray-800 shadow-md sm:rounded-lg px-8 pt-6 pb-8 mb-4 mt-8 border-solid border-[1px] border-gray-200 dark:border-gray-700 mx-auto">
+								class="w-full max-w-md bg-slate-200 dark:bg-slate-800 shadow-md sm:rounded-lg px-8 pt-6 pb-8 mb-4 mt-8 border-solid border-[1px] border-slate-300 dark:border-slate-600 mx-auto">
 								<div class="mb-4 flex items-center justify-center">
 									<svg width="64" height="32" viewBox="0 0 64 32" fill="currentColor"
 										xmlns="http://www.w3.org/2000/svg">
@@ -1180,7 +1196,7 @@
 								<form class="space-y-4">
 									<div class="mb-4">
 										<input
-											class="flex h-10 border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none dark:text-white dark:bg-gray-600 dark:ring-gray-600"
+											class="flex h-10 border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full px-3 py-2 text-slate-700 border rounded-lg focus:outline-none dark:text-slate-50 dark:bg-slate-600 dark:ring-slate-600"
 											id="signup2-username" placeholder="Username" type="text" />
 										<p class="text-xs font-medium leading-none text-red-500 mt-1 hidden">
 											Error message goes here
@@ -1188,7 +1204,7 @@
 									</div>
 									<div class="mb-4">
 										<input
-											class="flex h-10 border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none dark:text-white dark:bg-gray-600 dark:ring-gray-600"
+											class="flex h-10 border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full px-3 py-2 text-slate-700 border rounded-lg focus:outline-none dark:text-slate-50 dark:bg-slate-600 dark:ring-slate-600"
 											id="signup2-email" placeholder="Email Address" type="email" />
 										<p class="text-xs font-medium leading-none text-red-500 mt-1 hidden">
 											Error message goes here
@@ -1196,7 +1212,7 @@
 									</div>
 									<div class="mb-4">
 										<input
-											class="flex h-10 border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none dark:text-white dark:bg-gray-600 dark:ring-gray-600"
+											class="flex h-10 border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full px-3 py-2 text-slate-700 border rounded-lg focus:outline-none dark:text-slate-50 dark:bg-slate-600 dark:ring-slate-600"
 											id="signup2-compony" placeholder="Compony" type="text" />
 										<p class="text-xs font-medium leading-none text-red-500 mt-1 hidden">
 											Error message goes here
@@ -1204,7 +1220,7 @@
 									</div>
 									<div class="mb-4">
 										<input
-											class="flex h-10 border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none dark:text-white dark:bg-gray-600 dark:ring-gray-600"
+											class="flex h-10 border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full px-3 py-2 text-slate-700 border rounded-lg focus:outline-none dark:text-slate-50 dark:bg-slate-600 dark:ring-slate-600"
 											id="signup2-job" placeholder="Job Title" type="text" />
 										<p class="text-xs font-medium leading-none text-red-500 mt-1 hidden">
 											Error message goes here
@@ -1212,7 +1228,7 @@
 									</div>
 									<div class="mb-4">
 										<input
-											class="flex h-10 border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none dark:text-white dark:bg-gray-600 dark:ring-gray-600"
+											class="flex h-10 border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full px-3 py-2 text-slate-700 border rounded-lg focus:outline-none dark:text-slate-50 dark:bg-slate-600 dark:ring-slate-600"
 											id="signup2-industry" placeholder="Industry" type="text" />
 										<p class="text-xs font-medium leading-none text-red-500 mt-1 hidden">
 											Error message goes here
@@ -1220,7 +1236,7 @@
 									</div>
 									<div class="mt-6 mb-4">
 										<button
-											class="inline-flex items-center justify-center whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 w-full py-2 px-4 text-center rounded-md text-white dark:text-white text-sm focus:outline-none bg-orange-400 hover:bg-orange-500 dark:bg-orange-500 dark:hover:bg-orange-400"
+											class="inline-flex items-center justify-center slate-100space-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 w-full py-2 px-4 text-center rounded-md text-slate-50 dark:text-slate-50 text-sm focus:outline-none bg-orange-400 hover:bg-orange-500 dark:bg-orange-500 dark:hover:bg-orange-400"
 											type="submit">
 											Register Now
 										</button>

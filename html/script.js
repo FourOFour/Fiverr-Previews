@@ -1,11 +1,33 @@
 let BASE_URL = import.meta.env.BASE_URL;
 let topElement = document.getElementById('top');
 let timeOutes = {};
+let storage = window.localStorage;
+let isDark;
+
+function updatedAndSaveDark(isDark) {
+    if (storage) {
+        storage.setItem('dark', isDark)
+    }
+}
+
+function readDark() {
+    if (storage) {
+        isDark = storage.getItem('dark') !== 'false';
+
+        if (isDark) {
+            topElement.classList.add('dark');
+        }
+    }
+}
 
 function toggleDark(e) {
-    if (e)
+    if (e) {
         e.preventDefault();
+    }
+
     topElement.classList.toggle('dark');
+    isDark = !isDark;
+    updatedAndSaveDark(isDark);
 }
 
 function toggleElement(id) {
@@ -64,3 +86,7 @@ window.timeoutMouseLeave = timeoutMouseLeave;
 window.timeoutMouseEnter = timeoutMouseEnter;
 window.dataStateCheckToggle = dataStateCheckToggle;
 window.dataStateBtnClick = dataStateBtnClick;
+
+document.addEventListener('DOMContentLoaded', function() {
+    readDark();
+});
